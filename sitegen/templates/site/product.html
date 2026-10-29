@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero small">
+  <div class="wrap">
+    <h1>{{ c.product.name }}</h1>
+    <p class="lead">{{ c.product.summary }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two">
+    <div>
+      <h2>{{ t.inputs }}</h2>
+      <ul>{% for i in c.product.inputs %}<li>{{ i }}</li>{% endfor %}</ul>
+    </div>
+    <div>
+      <h2>{{ t.outputs }}</h2>
+      <ul>{% for o in c.product.outputs %}<li>{{ o }}</li>{% endfor %}</ul>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <h2>{{ t.scenarios }}</h2>
+    {# во всю ширину, а то узкий столбик #}
+    <ol class="scenarios">
+      {% for s in c.product.scenarios %}
+      <li class="scenario">
+        <h3>{{ s.title }}</h3>
+        <dl class="flow">
+          <div><dt>{{ t.situation }}</dt><dd>{{ s.situation }}</dd></div>
+          <div><dt>{{ t.how_it_helps }}</dt><dd>{{ s.how_it_helps }}</dd></div>
+          <div><dt>{{ t.outcome }}</dt><dd>{{ s.result }}</dd></div>
+        </dl>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>{{ t.process }}</h2>
+    <ol class="steps">{% for s in c.product.process %}<li>{{ s }}</li>{% endfor %}</ol>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <h2>{{ t.limitations }}</h2>
+    <ul>{% for l in c.product.limitations %}<li>{{ l }}</li>{% endfor %}</ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>{{ t.faq }}</h2>
+    {% for f in c.faq %}
+    <details class="faq">
+      <summary>{{ f.question }}</summary>
+      <p>{{ f.answer }}</p>
+    </details>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

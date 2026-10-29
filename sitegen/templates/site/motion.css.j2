@@ -1,0 +1,25 @@
+/* только css, при reduce motion выключаем */
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+
+.hero h1, .hero .lead, .hero .btn, .hero .kicker, .hero-aside { animation: rise .7s ease-out both; }
+.hero .lead, .hero .kicker { animation-delay: .12s; }
+.hero .btn, .hero-aside { animation-delay: .24s; }
+.header { animation: fade .5s ease-out both; }
+
+.btn, .card, .person, .quote, nav a, .faq summary { transition: transform .2s ease, box-shadow .2s ease, color .2s ease, background-color .2s ease; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(0, 0, 0, .15); }
+.card:hover, .person:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(0, 0, 0, .08); }
+.person img { transition: transform .3s ease; }
+.person:hover img { transform: scale(1.04); }
+.faq[open] p, .pub[open] .pub-body { animation: rise .35s ease-out both; }
+
+/* появление блоков при прокрутке, где браузер умеет scroll-driven анимации,
+   за 160px прокрутки, чтоб высокие блоки не висели полупрозрачными */
+@supports (animation-timeline: view()) {
+  .section .wrap > * { animation: rise linear both; animation-timeline: view(); animation-range: entry 0% entry 160px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

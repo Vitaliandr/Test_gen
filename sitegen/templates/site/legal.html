@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero small">
+  <div class="wrap">
+    <h1>{{ ptitle }}</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap prose">
+    <h2>{{ ta['imprint_' ~ facts.country_code|lower] or ta.imprint }}</h2>
+    <dl class="contacts">
+      <dt>{{ t.address }}</dt>
+      <dd>{{ facts.legal_name }}<br>{{ facts.street }}<br>{{ facts.postal_code }} {{ facts.city }}<br>{{ facts.country }}</dd>
+      <dt>{{ ta.represented }}</dt>
+      <dd>{{ section.imprint.represented_by }}</dd>
+      <dt>{{ t.phone }}</dt>
+      <dd><a href="tel:{{ facts.phone_raw }}">{{ facts.phone }}</a></dd>
+      <dt>{{ t.email }}</dt>
+      <dd><a href="mailto:{{ facts.email }}">{{ facts.email }}</a></dd>
+      <dt>{{ ta.responsible }}</dt>
+      <dd>{{ section.imprint.content_responsible }}</dd>
+    </dl>
+    <p>{{ section.imprint.liability_note }}</p>
+    <p>{{ section.imprint.dispute_note }}</p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap prose">
+    <h2>{{ ta.terms }}</h2>
+    <p>{{ section.terms_intro }}</p>
+    {% for term in section.terms %}
+    <h3>{{ loop.index }}. {{ term.title | unnumber }}</h3>
+    <p>{{ term.text }}</p>
+    {% endfor %}
+    <p class="muted">{{ ta.effective }} {{ section.effective_year }}</p>
+  </div>
+</section>
+{% endblock %}

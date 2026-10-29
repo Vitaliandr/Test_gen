@@ -1,0 +1,380 @@
+{
+  "brand": "Datenpegel",
+  "legal_name": "Datenpegel Research GmbH",
+  "founding_year": 2014,
+  "employee_count": 84,
+  "tagline": "Geprüfte Datenanalysen für Investmententscheidungen",
+  "value_proposition": "Datenpegel verbindet automatisierte Datenauswertung mit der Kontrolle erfahrener Analysten. Unsere Kunden erhalten Ergebnisse, die sie in Anlageausschüssen direkt verwenden können, und kennen für jede Zahl die Quelle.",
+  "advantages": [
+    "Jede Auswertung wird vor der Lieferung von einem Analysten geprüft",
+    "Für jede Kennzahl wird die ursprüngliche Datenquelle mitgeliefert",
+    "Feste Ansprechpartner statt anonymer Ticket-Warteschlange",
+    "Mehrere Datenanbieter werden zu einer einheitlichen Sicht zusammengeführt"
+  ],
+  "history": "Datenpegel wurde 2014 in München von Katrin Hoffmann und Dr. Stefan Albrecht gegründet. Katrin leitete zuvor ein Team für Marktdaten bei einem großen deutschen Vermögensverwalter, Stefan promovierte in angewandter Statistik. Anfangs lieferten die beiden Auswertungen für zwei Family Offices, die Daten mehrerer Anbieter vergleichen wollten. Heute arbeiten 84 Menschen bei Datenpegel in München und im Homeoffice, und der Schwerpunkt liegt auf dem Zusammenführen und Prüfen von Daten für Anlageteams.",
+  "specialization": "Wir führen Daten von mehreren Anbietern zusammen, bereinigen sie und werten sie für quantitative und fundamentale Anlageteams aus. Der Unterschied zu reinen Softwareanbietern ist die Prüfung durch Analysten, die jede Lieferung begleitet.",
+  "audience": "Vermögensverwalter, Family Offices und Anlageteams von Versicherern, die mehrere Datenquellen nutzen und belastbare Ergebnisse brauchen, ohne ein eigenes Datenteam aufzubauen.",
+  "client_problem": "Daten kommen von verschiedenen Anbietern in unterschiedlichen Formaten und widersprechen sich teilweise. Anlageteams verbringen Wochen mit dem Abgleich und können bei Abweichungen oft nicht sagen, welche Quelle stimmt.",
+  "product": {
+    "name": "Pegel Review",
+    "summary": "Ein betreuter Auswertungsdienst: Wir führen Ihre Datenquellen zusammen, berechnen die vereinbarten Kennzahlen und liefern sie nach Prüfung durch einen Analysten.",
+    "inputs": [
+      "Zugänge zu Ihren lizenzierten Datenquellen oder Lieferungen Ihrer Datenanbieter",
+      "Die Liste der gewünschten Kennzahlen und der Zeitraum der Auswertung",
+      "Ihre Regeln für den Umgang mit widersprüchlichen Werten"
+    ],
+    "process": [
+      "Im Onboarding legen wir gemeinsam Quellen, Kennzahlen und Lieferrhythmus fest",
+      "Unsere Pipeline führt die Daten zusammen und markiert Abweichungen zwischen den Quellen",
+      "Ein Analyst prüft die markierten Abweichungen und dokumentiert seine Entscheidung",
+      "Sie erhalten die Ergebnisse als Tabelle und Kurzbericht per E-Mail oder über einen vereinbarten Datenaustausch"
+    ],
+    "outputs": [
+      "Bereinigte Kennzahlentabelle im vereinbarten Format",
+      "Kurzbericht mit Hinweisen zu Abweichungen und verwendeten Quellen"
+    ],
+    "limitations": [
+      "Wir arbeiten nur mit Daten, für die Sie die Nutzungsrechte besitzen",
+      "Echtzeitlieferungen bieten wir nicht an, der kürzeste Rhythmus ist täglich",
+      "Die Ergebnisse sind Entscheidungsgrundlagen und ersetzen keine Anlageberatung"
+    ],
+    "scenarios": [
+      {
+        "title": "Zusammenführen von drei Datenanbietern",
+        "situation": "Ein Family Office bezieht Kennzahlen von drei Anbietern, die sich bei einzelnen Werten widersprechen. Das Team weiß nicht, welcher Quelle es bei der Anlageentscheidung trauen soll.",
+        "how_it_helps": "Wir führen die Quellen zusammen, markieren Abweichungen und lassen einen Analysten jede Abweichung prüfen. Die Entscheidung wird mit Begründung dokumentiert.",
+        "result": "Das Team erhält eine einheitliche Tabelle und weiß, welche Werte geprüft wurden und warum."
+      },
+      {
+        "title": "Regelmäßiger Monatsbericht",
+        "situation": "Ein Vermögensverwalter braucht jeden Monat dieselben Kennzahlen in gleicher Form für den Anlageausschuss, hat aber keine Kapazität für die Aufbereitung.",
+        "how_it_helps": "Wir liefern nach festem Rhythmus eine bereinigte Kennzahlentabelle und einen Kurzbericht mit Hinweisen zu Auffälligkeiten.",
+        "result": "Der Ausschuss bekommt pünktlich vergleichbare Zahlen, und das Team spart die manuelle Aufbereitung."
+      },
+      {
+        "title": "Neue Datenquelle anbinden",
+        "situation": "Ein Anlageteam möchte eine zusätzliche lizenzierte Datenquelle nutzen, ohne die bestehenden Auswertungen neu aufzubauen.",
+        "how_it_helps": "Im Onboarding klären wir Format und Qualität der Quelle, binden sie in die Pipeline ein und vergleichen ihre Werte mit den vorhandenen Quellen.",
+        "result": "Die neue Quelle fließt in die gewohnte Lieferung ein, und Abweichungen zu den bisherigen Quellen sind sichtbar."
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": "Welche Datenquellen können Sie einbinden?",
+      "answer": "Alle Quellen, für die Sie eine Lizenz besitzen und die in einem gängigen tabellarischen oder strukturierten Format vorliegen. Neue Quellen klären wir im Onboarding."
+    },
+    {
+      "question": "Wie oft erhalten wir Lieferungen?",
+      "answer": "Der kürzeste Rhythmus ist täglich, üblich sind wöchentliche und monatliche Lieferungen. Der Rhythmus wird im Onboarding vereinbart."
+    },
+    {
+      "question": "Wer prüft die Ergebnisse?",
+      "answer": "Jede Lieferung wird von einem Analysten geprüft, der Abweichungen zwischen den Quellen bewertet und seine Entscheidung dokumentiert."
+    },
+    {
+      "question": "Bieten Sie Echtzeitdaten an?",
+      "answer": "Nein. Der Dienst ist für geprüfte Auswertungen gedacht, der kürzeste Lieferrhythmus ist täglich."
+    },
+    {
+      "question": "Ist das eine Anlageberatung?",
+      "answer": "Nein. Wir liefern geprüfte Daten und Auswertungen als Grundlage. Die Anlageentscheidung bleibt bei Ihrem Team."
+    }
+  ],
+  "people": [
+    {
+      "name": "Katrin Hoffmann",
+      "role": "Geschäftsführerin und Mitgründerin",
+      "level": "ceo",
+      "bio": "Leitete zuvor ein Team für Marktdaten bei einem großen deutschen Vermögensverwalter. Verantwortet bei Datenpegel Strategie und Kundenbeziehungen."
+    },
+    {
+      "name": "Dr. Stefan Albrecht",
+      "role": "Leiter Datenwissenschaft",
+      "level": "head",
+      "bio": "Promovierte in angewandter Statistik und gründete Datenpegel mit. Verantwortet die Methoden für Datenabgleich und die Qualitätsregeln der Pipeline."
+    },
+    {
+      "name": "Miriam Sauer",
+      "role": "Leiterin Kundenanalyse",
+      "level": "head",
+      "bio": "Arbeitete zwölf Jahre als Analystin für Versicherer. Führt das Team, das Lieferungen prüft und Kunden im Alltag begleitet."
+    },
+    {
+      "name": "Felix Brandl",
+      "role": "Dateningenieur",
+      "level": "staff",
+      "bio": "Kam von einem Logistikunternehmen, wo er Datenplattformen betreute. Baut bei Datenpegel die Anbindung neuer Datenquellen."
+    },
+    {
+      "name": "Nadine Roth",
+      "role": "Senior-Analystin",
+      "level": "staff",
+      "bio": "Spezialisiert auf Kredit- und Branchendaten. Prüft Lieferungen für Kunden aus dem Bereich Vermögensverwaltung."
+    },
+    {
+      "name": "Jan Köhler",
+      "role": "Analyst",
+      "level": "staff",
+      "bio": "Studierte Volkswirtschaft in Mannheim und wechselte nach einer Station im Controlling zu Datenpegel. Betreut Lieferungen für Family Offices."
+    }
+  ],
+  "country": "DE",
+  "direction": "data_analytics",
+  "service_type": "managed",
+  "scale": "medium",
+  "language": "de",
+  "contacts": {
+    "city": "München",
+    "postal_code": "80331",
+    "street": "Kanalstraße 17",
+    "phone": "+49 89 4120 3856",
+    "email": "info@datenpegel.de"
+  },
+  "sections": {
+    "legal": {
+      "imprint": {
+        "represented_by": "Katrin Hoffmann",
+        "content_responsible": "Miriam Sauer",
+        "liability_note": "Wir prüfen die Inhalte dieser Seite sorgfältig, können aber nicht garantieren, dass sie stets vollständig und aktuell sind. Die Angaben beschreiben unsere Leistungen und sind keine Anlageberatung.",
+        "dispute_note": "Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Unsere Leistungen richten sich an Unternehmen und professionelle Anleger."
+      },
+      "terms_intro": "Diese Bedingungen gelten für die Erbringung von Auswertungsleistungen (Pegel Review) durch die Datenpegel Research GmbH gegenüber ihren Geschäftskunden.",
+      "terms": [
+        {
+          "title": "Gegenstand der Leistung",
+          "text": "Die Datenpegel Research GmbH führt die vom Kunden benannten Datenquellen zusammen, berechnet vereinbarte Kennzahlen und liefert sie nach Prüfung durch einen Analysten. Umfang und Rhythmus werden im Onboarding festgelegt."
+        },
+        {
+          "title": "Durchführung",
+          "text": "Lieferungen erfolgen im vereinbarten Rhythmus per E-Mail oder über einen vereinbarten Datenaustausch. Der kürzeste mögliche Rhythmus ist täglich, Echtzeitlieferungen sind nicht Teil der Leistung."
+        },
+        {
+          "title": "Pflichten des Kunden",
+          "text": "Der Kunde stellt Zugänge und Daten bereit, für die er die Nutzungsrechte besitzt, und benennt Ansprechpartner. Die Weitergabe der Ergebnisse an Dritte bedarf der Zustimmung der Datenpegel Research GmbH."
+        },
+        {
+          "title": "Haftung",
+          "text": "Die Ergebnisse sind Entscheidungsgrundlagen und keine Anlageberatung. Anlageentscheidungen trifft der Kunde eigenverantwortlich, die Haftung richtet sich nach den gesetzlichen Vorschriften."
+        },
+        {
+          "title": "Laufzeit und Kündigung",
+          "text": "Der Vertrag läuft über die vereinbarte Laufzeit und verlängert sich, wenn er nicht gekündigt wird. Jede Partei kann ihn schriftlich mit einer Frist von dreißig Tagen zum Ende der Laufzeit kündigen."
+        },
+        {
+          "title": "Anwendbares Recht",
+          "text": "Auf das Vertragsverhältnis findet deutsches Recht Anwendung. Gerichtsstand ist, soweit zulässig, der Sitz der Datenpegel Research GmbH."
+        }
+      ],
+      "effective_year": 2025
+    },
+    "requisites": {
+      "entries": [
+        {
+          "key": "court",
+          "value": "Amtsgericht München"
+        },
+        {
+          "key": "register",
+          "value": "HRB 904959"
+        },
+        {
+          "key": "vat_id",
+          "value": "DE554088568"
+        },
+        {
+          "key": "capital",
+          "value": "25.000 EUR"
+        },
+        {
+          "key": "director",
+          "value": "Katrin Hoffmann"
+        }
+      ]
+    },
+    "privacy": {
+      "intro": "Wir erklären, welche personenbezogenen Daten beim Besuch dieser Seite und bei Kontaktaufnahme verarbeitet werden, auf welcher Grundlage und wie lange sie gespeichert bleiben.",
+      "controller_note": "Verantwortlich für die Verarbeitung ist die Datenpegel Research GmbH, deren Kontaktdaten unten und in der Fußzeile der Seite stehen.",
+      "data_processed": [
+        {
+          "category": "Server-Logdateien",
+          "purpose": "Sicherer Betrieb der Seite: IP-Adresse, Datum und Uhrzeit des Aufrufs, aufgerufene Seite und Browsertyp.",
+          "legal_basis": "Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren Betrieb)",
+          "retention": "bis zu 14 Tage"
+        },
+        {
+          "category": "Korrespondenz per E-Mail und Telefon",
+          "purpose": "Beantwortung von Anfragen von Interessenten und Partnern, die uns selbst schreiben oder anrufen.",
+          "legal_basis": "Art. 6 Abs. 1 lit. b und f DSGVO (Vertragsanbahnung, berechtigtes Interesse)",
+          "retention": "solange zur Beantwortung nötig, danach gemäß den Aufbewahrungsfristen für Geschäftsbriefe"
+        }
+      ],
+      "recipients": [
+        "Hosting-Anbieter der Seite, der Daten nur in unserem Auftrag verarbeitet"
+      ],
+      "rights": [
+        "Auskunft über die von uns verarbeiteten Daten verlangen",
+        "Berichtigung unrichtiger Daten verlangen",
+        "Löschung verlangen, wenn es keinen Grund für die Speicherung gibt",
+        "Einschränkung der Verarbeitung verlangen",
+        "Der Verarbeitung aus berechtigtem Interesse widersprechen",
+        "Die eigenen Daten in einem übertragbaren Format erhalten",
+        "Sich bei einer Datenschutzaufsichtsbehörde beschweren"
+      ],
+      "cookies_statement": "Diese Seite setzt keine Cookies und verwendet keine Reichweitenmessung oder Webanalyse. Daten über Ihr Verhalten auf der Seite erheben wir nicht.",
+      "contact_for_requests": "Bei Fragen zu personenbezogenen Daten und zur Ausübung Ihrer Rechte schreiben Sie uns per E-Mail, wir antworten innerhalb eines Monats.",
+      "effective_year": 2025
+    },
+    "security": {
+      "summary": "Unsere Kunden vertrauen uns Datenquellen und Auswertungsregeln an. Deshalb beschreiben wir offen, welche Maßnahmen wir treffen und was wir nicht behaupten.",
+      "measures": [
+        {
+          "area": "Zugriffskontrolle",
+          "description": "Auf Kundendaten greifen nur Mitarbeitende zu, die den Kunden betreuen. Berechtigungen werden nach Rolle vergeben und vierteljährlich überprüft."
+        },
+        {
+          "area": "Verschlüsselung",
+          "description": "Daten werden bei der Übertragung und bei der Speicherung in unserer Umgebung verschlüsselt, Schlüssel werden getrennt von den Daten verwaltet."
+        },
+        {
+          "area": "Trennung der Kundendaten",
+          "description": "Datenquellen und Auswertungen jedes Kunden liegen getrennt, damit Daten eines Kunden nicht in Ergebnisse eines anderen gelangen."
+        },
+        {
+          "area": "Protokollierung",
+          "description": "Wir protokollieren, wer wann auf Daten zugegriffen oder Auswertungsregeln geändert hat, damit jede Änderung nachvollziehbar bleibt."
+        },
+        {
+          "area": "Schulung der Mitarbeitenden",
+          "description": "Neue Mitarbeitende werden im Umgang mit Kundendaten unterwiesen, die Unterweisung wird jährlich wiederholt."
+        },
+        {
+          "area": "Prüfung von Dienstleistern",
+          "description": "Dienstleister, die Zugang zu Daten haben könnten, werden vor Vertragsabschluss geprüft und vertraglich zur Vertraulichkeit verpflichtet."
+        }
+      ],
+      "data_handling": "Wir erhalten vom Kunden Zugänge zu lizenzierten Datenquellen oder Lieferungen seiner Datenanbieter. Die Daten werden für die vereinbarte Auswertung verarbeitet und nach Vertragsende innerhalb von dreißig Tagen gelöscht, sofern keine gesetzliche Pflicht zur Aufbewahrung besteht.",
+      "incident_response": "Bei Verdacht auf einen Vorfall bewertet die zuständige Person den Umfang binnen eines Werktags, schränkt Zugriffe ein und informiert betroffene Kunden. Ursachen und Maßnahmen werden dokumentiert."
+    },
+    "references": {
+      "clients": [
+        {
+          "name": "Elbblick Family Office",
+          "segment": "Family Office aus Hamburg",
+          "since_year": 2016,
+          "description": "Führt Daten von drei Anbietern zusammen und erhält monatlich eine geprüfte Kennzahlentabelle."
+        },
+        {
+          "name": "Hartmann & Winter Vermögensverwaltung",
+          "segment": "mittelgroßer Vermögensverwalter",
+          "since_year": 2018,
+          "description": "Nutzt die Lieferungen als Grundlage für die Sitzungen des Anlageausschusses."
+        },
+        {
+          "name": "Südwerk Versicherungsanlagen",
+          "segment": "Anlageteam eines regionalen Versicherers",
+          "since_year": 2020,
+          "description": "Lässt Kredit- und Branchendaten aus mehreren Quellen abgleichen und prüfen."
+        },
+        {
+          "name": "Rosenau Kapitalpartner",
+          "segment": "unabhängiger Anlageberater",
+          "since_year": 2023,
+          "description": "Bezieht ausgewählte Kennzahlen im wöchentlichen Rhythmus für eigene Marktübersichten."
+        },
+        {
+          "name": "Falkenstein Stiftungsvermögen",
+          "segment": "Vermögensverwaltung einer Stiftung",
+          "since_year": 2024,
+          "description": "Setzt auf dokumentierte Entscheidungen bei Abweichungen zwischen den Datenquellen."
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "Wir wissen bei jeder Zahl, aus welcher Quelle sie stammt und warum sie so entschieden wurde. Das spart uns viele Diskussionen im Ausschuss.",
+          "author_name": "Heiko Lanzinger",
+          "author_role": "Leiter Portfoliomanagement",
+          "client": "Hartmann & Winter Vermögensverwaltung"
+        },
+        {
+          "quote": "Die feste Ansprechpartnerin kennt unsere Regeln und erinnert uns an Auffälligkeiten, bevor sie zum Problem werden.",
+          "author_name": "Sabine Ostermann",
+          "author_role": "Geschäftsführerin",
+          "client": "Elbblick Family Office"
+        },
+        {
+          "quote": "Der Abgleich der Datenquellen, der früher Wochen gedauert hat, ist ein Teil der regulären Lieferung geworden.",
+          "author_name": "Dirk Wiesener",
+          "author_role": "Leiter Kapitalanlagen",
+          "client": "Südwerk Versicherungsanlagen"
+        }
+      ],
+      "cases": [
+        {
+          "title": "Drei Datenanbieter, eine geprüfte Tabelle",
+          "client": "Elbblick Family Office",
+          "challenge": "Das Family Office bezog Kennzahlen von drei Anbietern, die sich bei einzelnen Werten widersprachen, und verglich sie von Hand.",
+          "approach": "Wir haben die Quellen in eine Pipeline eingebunden, Abweichungen markiert und jede Abweichung von einem Analysten prüfen und dokumentieren lassen.",
+          "result": "Das Team erhält monatlich eine einheitliche Tabelle mit nachvollziehbarer Begründung für jede entschiedene Abweichung."
+        },
+        {
+          "title": "Nachvollziehbare Zahlen für den Anlageausschuss",
+          "client": "Hartmann & Winter Vermögensverwaltung",
+          "challenge": "Im Anlageausschuss wurde bei strittigen Zahlen regelmäßig diskutiert, welche Quelle maßgeblich sein soll.",
+          "approach": "Wir haben gemeinsam Regeln für den Umgang mit widersprüchlichen Werten festgelegt und liefern zu jeder Kennzahl die verwendete Quelle mit.",
+          "result": "Die Diskussion über die Herkunft der Zahlen ist kürzer geworden, und die Sitzungen konzentrieren sich auf die Anlageentscheidung."
+        }
+      ],
+      "publications": [
+        {
+          "title": "Wenn zwei Datenanbieter sich widersprechen",
+          "kind": "article",
+          "year": 2021,
+          "author": "Nadine Roth",
+          "summary": "Typische Ursachen für abweichende Kennzahlen bei verschiedenen Anbietern und Hinweise, wie man sie erkennt.",
+          "body": [
+            "Wenn zwei Anbieter für dasselbe Unternehmen unterschiedliche Kennzahlen liefern, liegt das selten an einem einfachen Fehler. Häufiger unterscheiden sich Stichtage, Abgrenzungen oder die Behandlung von Sondereffekten.",
+            "Ein typisches Beispiel ist der Umsatz: Ein Anbieter übernimmt den berichteten Wert, ein anderer bereinigt ihn um Unternehmensverkäufe. Beide Werte sind korrekt, beantworten aber unterschiedliche Fragen.",
+            "Der Artikel zeigt, wie man solche Abweichungen systematisch einordnet, welche Angaben in der Dokumentation der Anbieter dabei helfen und wann eine Rückfrage beim Anbieter sinnvoll ist."
+          ]
+        },
+        {
+          "title": "Qualitätsregeln für zusammengeführte Marktdaten",
+          "kind": "whitepaper",
+          "year": 2023,
+          "author": "Dr. Stefan Albrecht",
+          "summary": "Beschreibung der Regeln, nach denen Datenpegel Daten mehrerer Quellen abgleicht und Abweichungen markiert.",
+          "body": [
+            "Datenpegel führt Daten aus mehreren lizenzierten Quellen zusammen. Damit das Ergebnis nachvollziehbar bleibt, gelten feste Regeln dafür, welche Quelle bei welchem Datenfeld Vorrang hat.",
+            "Weichen Werte stärker voneinander ab als die festgelegte Toleranz, wird das Feld markiert und nicht stillschweigend überschrieben. Zu jeder Markierung wird gespeichert, welche Quellen beteiligt waren und welcher Wert übernommen wurde.",
+            "Das Whitepaper beschreibt diese Regeln im Detail und erklärt, warum eine sichtbare Markierung für Anlageteams wertvoller ist als ein scheinbar sauberer, aber ungeprüfter Datensatz."
+          ]
+        },
+        {
+          "title": "Wie wir Lieferungen vor der Auslieferung prüfen",
+          "kind": "report",
+          "year": 2024,
+          "author": "Miriam Sauer",
+          "summary": "Bericht über den Prüfprozess, in dem Analysten markierte Abweichungen bewerten und ihre Entscheidung festhalten.",
+          "body": [
+            "Bevor eine Datenlieferung an einen Kunden geht, bewerten Analysten alle markierten Abweichungen. Für jede Markierung entscheiden sie, welcher Wert übernommen wird, und halten die Begründung fest.",
+            "Der Bericht beschreibt, wie dieser Prüfschritt organisiert ist: welche Abweichungen zuerst geprüft werden, wie Entscheidungen dokumentiert werden und wie das Team mit Fällen umgeht, die sich nicht eindeutig klären lassen.",
+            "Außerdem zeigt er, wie die gesammelten Entscheidungen genutzt werden, um die Regeln für die Zusammenführung schrittweise zu verbessern und wiederkehrende Abweichungen früher zu erkennen."
+          ]
+        },
+        {
+          "title": "Datenqualität im Alltag eines Anlageteams",
+          "kind": "talk",
+          "year": 2025,
+          "author": "Katrin Hoffmann",
+          "summary": "Vortrag über die Erfahrungen aus zehn Jahren Zusammenarbeit mit Anlageteams bei der Auswahl und Prüfung von Datenquellen.",
+          "body": [
+            "Anlageteams arbeiten täglich mit Daten aus vielen Quellen, haben aber selten Zeit, deren Qualität im Detail zu prüfen. Im Vortrag geht es darum, wie man mit wenig Aufwand die wichtigsten Risiken erkennt.",
+            "Dazu gehören eine kurze Liste von Plausibilitätsprüfungen, klare Zuständigkeiten für Rückfragen bei Anbietern und eine gemeinsame Dokumentation der bekannten Eigenheiten einzelner Quellen.",
+            "Die Beispiele stammen aus der langjährigen Zusammenarbeit mit Anlageteams und zeigen, dass die meisten Datenprobleme nicht technisch, sondern organisatorisch gelöst werden."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,3 @@
+#!/bin/sh
+# только стандартная библиотека, подойдёт любой python
+PYTHONIOENCODING=utf-8 exec python -m scripts.check_secrets --staged

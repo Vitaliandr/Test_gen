@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero small">
+  <div class="wrap">
+    <h1>{{ ptitle }}</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    {# как меры защиты #}
+    <dl class="measures">
+      <div class="measure"><dt>{{ ta.legal_name }}</dt><dd>{{ facts.legal_name }}</dd></div>
+      <div class="measure"><dt>{{ ta.address }}</dt><dd>{{ facts.street }}, {{ facts.postal_code }} {{ facts.city }}, {{ facts.country }}</dd></div>
+      {% for e in section.entries %}
+      <div class="measure"><dt>{{ ta[e.key] }}</dt><dd>{{ e.value }}</dd></div>
+      {% endfor %}
+    </dl>
+  </div>
+</section>
+{% endblock %}

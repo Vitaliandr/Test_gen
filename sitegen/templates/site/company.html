@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero small">
+  <div class="wrap">
+    <h1>{{ facts.brand }}</h1>
+    <p class="lead">{{ facts.legal_name }}, {{ facts.city }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two">
+    <div>
+      <h2>{{ t.history }}</h2>
+      <p>{{ c.history }}</p>
+    </div>
+    <div>
+      <h2>{{ t.specialization }}</h2>
+      <p>{{ c.specialization }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <h2>{{ t.team }}</h2>
+    <ul class="team">
+      {% for p in c.people %}
+      <li class="person">
+        <img src="{{ photos[loop.index0] }}" alt="{{ p.name }}" width="120" height="120" loading="lazy">
+        <h3>{{ p.name }}</h3>
+        <p class="role">{{ p.role }}</p>
+        <p>{{ p.bio }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>{{ t.contacts }}</h2>
+    <dl class="contacts">
+      <dt>{{ t.address }}</dt>
+      <dd>{{ facts.legal_name }}<br>{{ facts.street }}<br>{{ facts.postal_code }} {{ facts.city }}<br>{{ facts.country }}</dd>
+      <dt>{{ t.phone }}</dt>
+      <dd><a href="tel:{{ facts.phone_raw }}">{{ facts.phone }}</a></dd>
+      <dt>{{ t.email }}</dt>
+      <dd><a href="mailto:{{ facts.email }}">{{ facts.email }}</a></dd>
+    </dl>
+    <p class="note">{{ t.no_form }}</p>
+  </div>
+</section>
+{% endblock %}

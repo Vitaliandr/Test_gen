@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero small">
+  <div class="wrap">
+    <h1>{{ ptitle }}</h1>
+    <p class="lead">{{ section.summary }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>{{ ta.measures }}</h2>
+    {# строками, как таблица #}
+    <dl class="measures">
+      {% for m in section.measures %}
+      <div class="measure">
+        <dt><span class="tick" aria-hidden="true"></span>{{ m.area }}</dt>
+        <dd>{{ m.description }}</dd>
+      </div>
+      {% endfor %}
+    </dl>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap two">
+    <div>
+      <h2>{{ ta.data_handling }}</h2>
+      <p>{{ section.data_handling }}</p>
+    </div>
+    <div>
+      <h2>{{ ta.incident }}</h2>
+      <p>{{ section.incident_response }}</p>
+      <p>{{ ta.report_to }} <a href="mailto:{{ facts.email }}">{{ facts.email }}</a></p>
+    </div>
+  </div>
+</section>
+{% endblock %}

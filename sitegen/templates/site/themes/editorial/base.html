@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ description }}">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="header masthead">
+  <div class="wrap">
+    <a class="logo" href="index.html">{{ facts.brand }}</a>
+    <p class="tag-line">{{ c.tagline }}</p>
+    <nav aria-label="Navigation">
+      {% for p in menu %}<a href="{{ p.file }}"{% if p.file == page.file %} aria-current="page"{% endif %}>{{ p.title }}</a>{% endfor %}
+    </nav>
+  </div>
+</header>
+<main>
+{% block content %}{% endblock %}
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <strong>{{ facts.legal_name }}</strong><br>
+        {{ facts.street }}<br>{{ facts.postal_code }} {{ facts.city }}, {{ facts.country }}
+      </div>
+      <div>
+        {{ t.phone }}: <a href="tel:{{ facts.phone_raw }}">{{ facts.phone }}</a><br>
+        {{ t.email }}: <a href="mailto:{{ facts.email }}">{{ facts.email }}</a>
+      </div>
+      <div class="links">
+        {% for p in menu %}<a href="{{ p.file }}">{{ p.title }}</a>{% endfor %}
+        {% for p in footer %}<a href="{{ p.file }}">{{ p.title }}</a>{% endfor %}
+      </div>
+    </div>
+    <p class="note">{{ facts.offer_note }}<br>{{ t.demo_note }}</p>
+  </div>
+</footer>
+</body>
+</html>

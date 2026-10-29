@@ -1,0 +1,949 @@
+{
+  "$defs": {
+    "Contacts": {
+      "properties": {
+        "city": {
+          "title": "City",
+          "type": "string"
+        },
+        "postal_code": {
+          "pattern": "^\\d{4,6}$",
+          "title": "Postal Code",
+          "type": "string"
+        },
+        "street": {
+          "title": "Street",
+          "type": "string"
+        },
+        "phone": {
+          "title": "Phone",
+          "type": "string"
+        },
+        "email": {
+          "title": "Email",
+          "type": "string"
+        }
+      },
+      "required": [
+        "city",
+        "postal_code",
+        "street",
+        "phone",
+        "email"
+      ],
+      "title": "Contacts",
+      "type": "object"
+    },
+    "FaqItem": {
+      "properties": {
+        "question": {
+          "maxLength": 200,
+          "minLength": 10,
+          "title": "Question",
+          "type": "string"
+        },
+        "answer": {
+          "maxLength": 800,
+          "minLength": 20,
+          "title": "Answer",
+          "type": "string"
+        }
+      },
+      "required": [
+        "question",
+        "answer"
+      ],
+      "title": "FaqItem",
+      "type": "object"
+    },
+    "Person": {
+      "properties": {
+        "name": {
+          "maxLength": 80,
+          "minLength": 3,
+          "title": "Name",
+          "type": "string"
+        },
+        "role": {
+          "maxLength": 100,
+          "minLength": 3,
+          "title": "Role",
+          "type": "string"
+        },
+        "level": {
+          "enum": [
+            "ceo",
+            "head",
+            "staff"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "bio": {
+          "maxLength": 700,
+          "minLength": 40,
+          "title": "Bio",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "role",
+        "level",
+        "bio"
+      ],
+      "title": "Person",
+      "type": "object"
+    },
+    "Product": {
+      "properties": {
+        "name": {
+          "maxLength": 80,
+          "minLength": 2,
+          "title": "Name",
+          "type": "string"
+        },
+        "summary": {
+          "maxLength": 600,
+          "minLength": 30,
+          "title": "Summary",
+          "type": "string"
+        },
+        "inputs": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 6,
+          "minItems": 2,
+          "title": "Inputs",
+          "type": "array"
+        },
+        "process": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 6,
+          "minItems": 3,
+          "title": "Process",
+          "type": "array"
+        },
+        "outputs": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 6,
+          "minItems": 2,
+          "title": "Outputs",
+          "type": "array"
+        },
+        "limitations": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 6,
+          "minItems": 2,
+          "title": "Limitations",
+          "type": "array"
+        },
+        "scenarios": {
+          "items": {
+            "$ref": "#/$defs/Scenario"
+          },
+          "maxItems": 4,
+          "minItems": 3,
+          "title": "Scenarios",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "summary",
+        "inputs",
+        "process",
+        "outputs",
+        "limitations",
+        "scenarios"
+      ],
+      "title": "Product",
+      "type": "object"
+    },
+    "Scenario": {
+      "properties": {
+        "title": {
+          "maxLength": 120,
+          "minLength": 5,
+          "title": "Title",
+          "type": "string"
+        },
+        "situation": {
+          "maxLength": 400,
+          "minLength": 30,
+          "title": "Situation",
+          "type": "string"
+        },
+        "how_it_helps": {
+          "maxLength": 500,
+          "minLength": 30,
+          "title": "How It Helps",
+          "type": "string"
+        },
+        "result": {
+          "maxLength": 300,
+          "minLength": 20,
+          "title": "Result",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "situation",
+        "how_it_helps",
+        "result"
+      ],
+      "title": "Scenario",
+      "type": "object"
+    },
+    "Imprint": {
+      "properties": {
+        "represented_by": {
+          "maxLength": 80,
+          "minLength": 3,
+          "title": "Represented By",
+          "type": "string"
+        },
+        "content_responsible": {
+          "maxLength": 80,
+          "minLength": 3,
+          "title": "Content Responsible",
+          "type": "string"
+        },
+        "liability_note": {
+          "maxLength": 800,
+          "minLength": 40,
+          "title": "Liability Note",
+          "type": "string"
+        },
+        "dispute_note": {
+          "maxLength": 800,
+          "minLength": 40,
+          "title": "Dispute Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "represented_by",
+        "content_responsible",
+        "liability_note",
+        "dispute_note"
+      ],
+      "title": "Imprint",
+      "type": "object"
+    },
+    "TermsSection": {
+      "properties": {
+        "title": {
+          "maxLength": 120,
+          "minLength": 3,
+          "title": "Title",
+          "type": "string"
+        },
+        "text": {
+          "maxLength": 1500,
+          "minLength": 60,
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "text"
+      ],
+      "title": "TermsSection",
+      "type": "object"
+    },
+    "LegalDocs": {
+      "properties": {
+        "imprint": {
+          "$ref": "#/$defs/Imprint"
+        },
+        "terms_intro": {
+          "maxLength": 600,
+          "minLength": 40,
+          "title": "Terms Intro",
+          "type": "string"
+        },
+        "terms": {
+          "items": {
+            "$ref": "#/$defs/TermsSection"
+          },
+          "maxItems": 9,
+          "minItems": 5,
+          "title": "Terms",
+          "type": "array"
+        },
+        "effective_year": {
+          "maximum": 2100,
+          "minimum": 2000,
+          "title": "Effective Year",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "imprint",
+        "terms_intro",
+        "terms",
+        "effective_year"
+      ],
+      "title": "LegalDocs",
+      "type": "object"
+    },
+    "Entry": {
+      "properties": {
+        "key": {
+          "enum": [
+            "court",
+            "register",
+            "vat_id",
+            "inn",
+            "kpp",
+            "ogrn",
+            "okved",
+            "capital",
+            "director"
+          ],
+          "title": "Key",
+          "type": "string"
+        },
+        "value": {
+          "maxLength": 120,
+          "minLength": 2,
+          "title": "Value",
+          "type": "string"
+        }
+      },
+      "required": [
+        "key",
+        "value"
+      ],
+      "title": "Entry",
+      "type": "object"
+    },
+    "Requisites": {
+      "properties": {
+        "entries": {
+          "items": {
+            "$ref": "#/$defs/Entry"
+          },
+          "maxItems": 8,
+          "minItems": 4,
+          "title": "Entries",
+          "type": "array"
+        }
+      },
+      "required": [
+        "entries"
+      ],
+      "title": "Requisites",
+      "type": "object"
+    },
+    "DataItem": {
+      "properties": {
+        "category": {
+          "maxLength": 120,
+          "minLength": 3,
+          "title": "Category",
+          "type": "string"
+        },
+        "purpose": {
+          "maxLength": 300,
+          "minLength": 20,
+          "title": "Purpose",
+          "type": "string"
+        },
+        "legal_basis": {
+          "maxLength": 200,
+          "minLength": 5,
+          "title": "Legal Basis",
+          "type": "string"
+        },
+        "actions": {
+          "default": "",
+          "maxLength": 300,
+          "title": "Actions",
+          "type": "string"
+        },
+        "retention": {
+          "maxLength": 200,
+          "minLength": 3,
+          "title": "Retention",
+          "type": "string"
+        }
+      },
+      "required": [
+        "category",
+        "purpose",
+        "legal_basis",
+        "retention"
+      ],
+      "title": "DataItem",
+      "type": "object"
+    },
+    "PolicySection": {
+      "properties": {
+        "title": {
+          "maxLength": 120,
+          "minLength": 3,
+          "title": "Title",
+          "type": "string"
+        },
+        "text": {
+          "maxLength": 2000,
+          "minLength": 60,
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "text"
+      ],
+      "title": "PolicySection",
+      "type": "object"
+    },
+    "PrivacyPolicy": {
+      "properties": {
+        "intro": {
+          "maxLength": 600,
+          "minLength": 40,
+          "title": "Intro",
+          "type": "string"
+        },
+        "controller_note": {
+          "maxLength": 400,
+          "minLength": 20,
+          "title": "Controller Note",
+          "type": "string"
+        },
+        "data_processed": {
+          "items": {
+            "$ref": "#/$defs/DataItem"
+          },
+          "maxItems": 6,
+          "minItems": 2,
+          "title": "Data Processed",
+          "type": "array"
+        },
+        "recipients": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 5,
+          "minItems": 1,
+          "title": "Recipients",
+          "type": "array"
+        },
+        "rights": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 8,
+          "minItems": 4,
+          "title": "Rights",
+          "type": "array"
+        },
+        "cookies_statement": {
+          "maxLength": 500,
+          "minLength": 30,
+          "title": "Cookies Statement",
+          "type": "string"
+        },
+        "contact_for_requests": {
+          "maxLength": 400,
+          "minLength": 30,
+          "title": "Contact For Requests",
+          "type": "string"
+        },
+        "sections": {
+          "items": {
+            "$ref": "#/$defs/PolicySection"
+          },
+          "maxItems": 12,
+          "title": "Sections",
+          "type": "array"
+        },
+        "effective_year": {
+          "maximum": 2100,
+          "minimum": 2000,
+          "title": "Effective Year",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "intro",
+        "controller_note",
+        "data_processed",
+        "recipients",
+        "rights",
+        "cookies_statement",
+        "contact_for_requests",
+        "effective_year"
+      ],
+      "title": "PrivacyPolicy",
+      "type": "object"
+    },
+    "Measure": {
+      "properties": {
+        "area": {
+          "maxLength": 80,
+          "minLength": 3,
+          "title": "Area",
+          "type": "string"
+        },
+        "description": {
+          "maxLength": 500,
+          "minLength": 40,
+          "title": "Description",
+          "type": "string"
+        }
+      },
+      "required": [
+        "area",
+        "description"
+      ],
+      "title": "Measure",
+      "type": "object"
+    },
+    "SecurityInfo": {
+      "properties": {
+        "summary": {
+          "maxLength": 500,
+          "minLength": 40,
+          "title": "Summary",
+          "type": "string"
+        },
+        "measures": {
+          "items": {
+            "$ref": "#/$defs/Measure"
+          },
+          "maxItems": 8,
+          "minItems": 4,
+          "title": "Measures",
+          "type": "array"
+        },
+        "data_handling": {
+          "maxLength": 800,
+          "minLength": 60,
+          "title": "Data Handling",
+          "type": "string"
+        },
+        "incident_response": {
+          "maxLength": 600,
+          "minLength": 40,
+          "title": "Incident Response",
+          "type": "string"
+        }
+      },
+      "required": [
+        "summary",
+        "measures",
+        "data_handling",
+        "incident_response"
+      ],
+      "title": "SecurityInfo",
+      "type": "object"
+    },
+    "CaseStudy": {
+      "properties": {
+        "title": {
+          "maxLength": 160,
+          "minLength": 10,
+          "title": "Title",
+          "type": "string"
+        },
+        "client": {
+          "maxLength": 80,
+          "minLength": 2,
+          "title": "Client",
+          "type": "string"
+        },
+        "challenge": {
+          "maxLength": 500,
+          "minLength": 40,
+          "title": "Challenge",
+          "type": "string"
+        },
+        "approach": {
+          "maxLength": 600,
+          "minLength": 40,
+          "title": "Approach",
+          "type": "string"
+        },
+        "result": {
+          "maxLength": 500,
+          "minLength": 40,
+          "title": "Result",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "client",
+        "challenge",
+        "approach",
+        "result"
+      ],
+      "title": "CaseStudy",
+      "type": "object"
+    },
+    "Client": {
+      "properties": {
+        "name": {
+          "maxLength": 80,
+          "minLength": 2,
+          "title": "Name",
+          "type": "string"
+        },
+        "segment": {
+          "maxLength": 200,
+          "minLength": 10,
+          "title": "Segment",
+          "type": "string"
+        },
+        "since_year": {
+          "maximum": 2100,
+          "minimum": 1990,
+          "title": "Since Year",
+          "type": "integer"
+        },
+        "description": {
+          "maxLength": 400,
+          "minLength": 30,
+          "title": "Description",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "segment",
+        "since_year",
+        "description"
+      ],
+      "title": "Client",
+      "type": "object"
+    },
+    "Publication": {
+      "properties": {
+        "title": {
+          "maxLength": 200,
+          "minLength": 10,
+          "title": "Title",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "article",
+            "whitepaper",
+            "report",
+            "talk"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "year": {
+          "maximum": 2100,
+          "minimum": 1990,
+          "title": "Year",
+          "type": "integer"
+        },
+        "author": {
+          "maxLength": 80,
+          "minLength": 3,
+          "title": "Author",
+          "type": "string"
+        },
+        "summary": {
+          "maxLength": 400,
+          "minLength": 30,
+          "title": "Summary",
+          "type": "string"
+        },
+        "body": {
+          "items": {
+            "maxLength": 700,
+            "minLength": 60,
+            "type": "string"
+          },
+          "maxItems": 4,
+          "title": "Body",
+          "type": "array"
+        }
+      },
+      "required": [
+        "title",
+        "kind",
+        "year",
+        "author",
+        "summary"
+      ],
+      "title": "Publication",
+      "type": "object"
+    },
+    "Testimonial": {
+      "properties": {
+        "quote": {
+          "maxLength": 500,
+          "minLength": 30,
+          "title": "Quote",
+          "type": "string"
+        },
+        "author_name": {
+          "maxLength": 80,
+          "minLength": 3,
+          "title": "Author Name",
+          "type": "string"
+        },
+        "author_role": {
+          "maxLength": 100,
+          "minLength": 3,
+          "title": "Author Role",
+          "type": "string"
+        },
+        "client": {
+          "maxLength": 80,
+          "minLength": 2,
+          "title": "Client",
+          "type": "string"
+        }
+      },
+      "required": [
+        "quote",
+        "author_name",
+        "author_role",
+        "client"
+      ],
+      "title": "Testimonial",
+      "type": "object"
+    },
+    "References": {
+      "properties": {
+        "clients": {
+          "items": {
+            "$ref": "#/$defs/Client"
+          },
+          "maxItems": 6,
+          "minItems": 3,
+          "title": "Clients",
+          "type": "array"
+        },
+        "testimonials": {
+          "items": {
+            "$ref": "#/$defs/Testimonial"
+          },
+          "maxItems": 4,
+          "minItems": 2,
+          "title": "Testimonials",
+          "type": "array"
+        },
+        "cases": {
+          "items": {
+            "$ref": "#/$defs/CaseStudy"
+          },
+          "maxItems": 3,
+          "minItems": 2,
+          "title": "Cases",
+          "type": "array"
+        },
+        "publications": {
+          "items": {
+            "$ref": "#/$defs/Publication"
+          },
+          "maxItems": 5,
+          "minItems": 2,
+          "title": "Publications",
+          "type": "array"
+        }
+      },
+      "required": [
+        "clients",
+        "testimonials",
+        "cases",
+        "publications"
+      ],
+      "title": "References",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "brand": {
+      "maxLength": 60,
+      "minLength": 2,
+      "title": "Brand",
+      "type": "string"
+    },
+    "legal_name": {
+      "maxLength": 100,
+      "minLength": 4,
+      "title": "Legal Name",
+      "type": "string"
+    },
+    "founding_year": {
+      "maximum": 2100,
+      "minimum": 1990,
+      "title": "Founding Year",
+      "type": "integer"
+    },
+    "employee_count": {
+      "maximum": 500,
+      "minimum": 3,
+      "title": "Employee Count",
+      "type": "integer"
+    },
+    "tagline": {
+      "maxLength": 140,
+      "minLength": 10,
+      "title": "Tagline",
+      "type": "string"
+    },
+    "value_proposition": {
+      "maxLength": 500,
+      "minLength": 30,
+      "title": "Value Proposition",
+      "type": "string"
+    },
+    "advantages": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 5,
+      "minItems": 3,
+      "title": "Advantages",
+      "type": "array"
+    },
+    "history": {
+      "maxLength": 1500,
+      "minLength": 100,
+      "title": "History",
+      "type": "string"
+    },
+    "specialization": {
+      "maxLength": 800,
+      "minLength": 40,
+      "title": "Specialization",
+      "type": "string"
+    },
+    "audience": {
+      "maxLength": 600,
+      "minLength": 30,
+      "title": "Audience",
+      "type": "string"
+    },
+    "client_problem": {
+      "maxLength": 600,
+      "minLength": 30,
+      "title": "Client Problem",
+      "type": "string"
+    },
+    "product": {
+      "$ref": "#/$defs/Product"
+    },
+    "faq": {
+      "items": {
+        "$ref": "#/$defs/FaqItem"
+      },
+      "maxItems": 5,
+      "minItems": 5,
+      "title": "Faq",
+      "type": "array"
+    },
+    "people": {
+      "items": {
+        "$ref": "#/$defs/Person"
+      },
+      "maxItems": 12,
+      "minItems": 5,
+      "title": "People",
+      "type": "array"
+    },
+    "country": {
+      "title": "Country",
+      "type": "string"
+    },
+    "direction": {
+      "title": "Direction",
+      "type": "string"
+    },
+    "service_type": {
+      "title": "Service Type",
+      "type": "string"
+    },
+    "scale": {
+      "enum": [
+        "small",
+        "medium"
+      ],
+      "title": "Scale",
+      "type": "string"
+    },
+    "language": {
+      "enum": [
+        "ru",
+        "de"
+      ],
+      "title": "Language",
+      "type": "string"
+    },
+    "contacts": {
+      "$ref": "#/$defs/Contacts"
+    },
+    "sections": {
+      "type": "object",
+      "properties": {
+        "legal": {
+          "$ref": "#/$defs/LegalDocs",
+          "description": "2. Юридические документы"
+        },
+        "requisites": {
+          "$ref": "#/$defs/Requisites",
+          "description": "3. Страновые реквизиты"
+        },
+        "privacy": {
+          "$ref": "#/$defs/PrivacyPolicy",
+          "description": "6. Персональные данные и политики обработки"
+        },
+        "security": {
+          "$ref": "#/$defs/SecurityInfo",
+          "description": "7. Безопасность"
+        },
+        "references": {
+          "$ref": "#/$defs/References",
+          "description": "8. Клиенты, отзывы, кейсы и публикации"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "brand",
+    "legal_name",
+    "founding_year",
+    "employee_count",
+    "tagline",
+    "value_proposition",
+    "advantages",
+    "history",
+    "specialization",
+    "audience",
+    "client_problem",
+    "product",
+    "faq",
+    "people",
+    "country",
+    "direction",
+    "service_type",
+    "scale",
+    "language",
+    "contacts"
+  ],
+  "title": "Company",
+  "type": "object"
+}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+{% set head, tail = c.tagline | split_tagline %}
+{% set said = c.value_proposition | sentences %}
+<section class="hero hero-home">
+  {# слева коротко, справа подробности, а то сплошной абзац #}
+  <div class="wrap hero-grid">
+    <div class="hero-main">
+      <h1>{{ head }}</h1>
+      {% if tail %}<p class="kicker">{{ tail }}</p>{% endif %}
+      <a class="btn" href="product.html">{{ t.cta_product }}</a>
+    </div>
+    <div class="hero-aside">
+      <p class="lead">{{ said[0] }}</p>
+      {% if said | length > 1 %}<p class="hero-more">{{ said[1:] | join(' ') }}</p>{% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two">
+    <div>
+      <h2>{{ t.audience }}</h2>
+      <p>{{ c.audience }}</p>
+    </div>
+    <div>
+      <h2>{{ t.problem }}</h2>
+      <p>{{ c.client_problem }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <h2>{{ t.advantages }}</h2>
+    {# n4 по два, n5 три и два #}
+    <ol class="cards advantages n{{ c.advantages | length }}">
+      {% for a in c.advantages %}<li class="card">{{ a }}</li>{% endfor %}
+    </ol>
+    <p><a class="btn" href="product.html">{{ t.about_product }}: {{ c.product.name }}</a></p>
+  </div>
+</section>
+{% endblock %}

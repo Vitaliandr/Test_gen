@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero small">
+  <div class="wrap">
+    <h1>{{ ptitle }}</h1>
+    <p class="lead">{{ section.intro }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap prose">
+    <h2>{{ ta.controller }}</h2>
+    <p>{{ section.controller_note }}</p>
+    <p>{{ facts.legal_name }}<br>{{ facts.street }}<br>{{ facts.postal_code }} {{ facts.city }}, {{ facts.country }}<br>
+      <a href="mailto:{{ facts.email }}">{{ facts.email }}</a></p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <h2>{{ ta.data }}</h2>
+    <div class="table-scroll">
+      <table class="data">
+        {% set with_actions = section.data_processed | selectattr('actions') | list %}
+        <tr><th>{{ ta.category }}</th><th>{{ ta.purpose }}</th><th>{{ ta.basis }}</th>{% if with_actions %}<th>{{ ta.actions }}</th>{% endif %}<th>{{ ta.retention }}</th></tr>
+        {% for d in section.data_processed %}
+        <tr><td>{{ d.category }}</td><td>{{ d.purpose }}</td><td>{{ d.legal_basis }}</td>{% if with_actions %}<td>{{ d.actions }}</td>{% endif %}<td>{{ d.retention }}</td></tr>
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two">
+    <div>
+      <h2>{{ ta.recipients }}</h2>
+      <ul>{% for r in section.recipients %}<li>{{ r }}</li>{% endfor %}</ul>
+    </div>
+    <div>
+      <h2>{{ ta.rights }}</h2>
+      <ul>{% for r in section.rights %}<li>{{ r }}</li>{% endfor %}</ul>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap prose">
+    {% for s in section.sections %}
+    <h2>{{ s.title }}</h2>
+    <p>{{ s.text }}</p>
+    {% endfor %}
+    <h2>{{ ta.cookies }}</h2>
+    <p>{{ section.cookies_statement }}</p>
+    <h2>{{ ta.requests }}</h2>
+    <p>{{ section.contact_for_requests }}</p>
+    <p>{{ ta.write_to }} <a href="mailto:{{ facts.email }}">{{ facts.email }}</a></p>
+    <p class="muted">{{ ta.effective }} {{ section.effective_year }}</p>
+  </div>
+</section>
+{% endblock %}

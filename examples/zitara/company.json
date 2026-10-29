@@ -1,0 +1,416 @@
+{
+  "brand": "Zitara",
+  "legal_name": "Zitara UG (haftungsbeschränkt)",
+  "founding_year": 2021,
+  "employee_count": 29,
+  "tagline": "KI-gestützte Patentberichte für Technologieinvestoren: Wer baut echte Substanz auf, wer nur Aktivität?",
+  "value_proposition": "Zitara liefert Fonds, Family Offices und Corporate-Venture-Teams regelmäßige Berichte, die Patentdaten in nachvollziehbare Aussagen zur technologischen Position von Unternehmen übersetzen. Kunden erhalten keine Rohdaten, sondern eingeordnete Kennzahlen, Zitationsanalysen und kurze Kommentare von Analysten. So lassen sich Beteiligungen und Kandidaten schneller und mit weniger Bauchgefühl vergleichen.",
+  "advantages": [
+    "Wir ordnen Patentanmelder automatisch Konzernstrukturen und Tochtergesellschaften zu, sodass unterschiedliche Schreibweisen die Auswertung nicht verfälschen.",
+    "Neben der Zahl der Anmeldungen bewerten wir Zitationsnetzwerke und Patentfamilien, um Qualität von bloßer Masse zu trennen.",
+    "Jeder Bericht wird von einem menschlichen Analysten geprüft und kommentiert, bevor er an den Kunden geht.",
+    "Eine Methodikseite in jedem Bericht erklärt Datenquellen und Kennzahlen, damit Investmentkomitees alles nachvollziehen können.",
+    "Unser Team kommt aus Investment, Patentrecherche und Datenwissenschaft und versteht die Anforderungen beider Seiten."
+  ],
+  "history": "Zitara wurde 2021 in Köln von Konrad Wiesner gegründet, der zuvor mehrere Jahre einen Technologiefonds verantwortet hatte. Dort erlebte er, dass Patentdaten in Investitionsentscheidungen zwar gern zitiert, aber selten sauber ausgewertet wurden. Gemeinsam mit der Datenwissenschaftlerin Merle Hartmann und dem früheren Patentrechercheur Jens Overbeck baute er einen Prototyp, der Anmelder und Konzerntöchter zusammenführte. Die ersten regelmäßigen Berichte entstanden 2022 für zwei kleine Fonds aus dem Rheinland. Seitdem ist das Team auf heute 29 Mitarbeitende gewachsen, und die Berichte gehen an Kunden in mehreren europäischen Ländern. Das Unternehmen finanziert sein Wachstum überwiegend aus laufenden Einnahmen und investiert Gewinne in die Weiterentwicklung der Methodik.",
+  "specialization": "Zitara konzentriert sich auf die Auswertung von Zitationsnetzwerken, Patentfamilien und Konzernzuordnungen für Investoren in hardwarenahe Technologien wie Batterien, Halbleiter, Medizintechnik und Industrieautomatisierung. Anders als reine Recherchedienste liefern wir keine Trefferlisten, sondern Einordnungen im Kontext einer Anlageentscheidung. Dabei sagen wir offen, wo Patentdaten wenig aussagen.",
+  "audience": "Venture-Capital- und Growth-Fonds mit Technologiefokus, Family Offices, Corporate-Venture-Einheiten und Beteiligungsgesellschaften, die in patentintensive Branchen investieren.",
+  "client_problem": "Investmentteams müssen die technologische Position von Unternehmen einschätzen, haben aber weder Zeit noch spezialisierte Werkzeuge, um Patentdaten systematisch auszuwerten. Rohe Anmeldezahlen führen in die Irre, weil Tochtergesellschaften, Patentfamilien und unterschiedliche Patentqualität nicht berücksichtigt werden. Zudem fehlen Vergleichswerte innerhalb eines Technologiefelds.",
+  "product": {
+    "name": "Zitara Patentradar",
+    "summary": "Ein vierteljährlich erscheinender, KI-gestützter Analysebericht, der für eine vereinbarte Beobachtungsliste von Unternehmen und Technologiethemen die Patentaktivität, Qualitätsindikatoren und Veränderungen gegenüber dem Vorquartal darstellt. Der Bericht wird als PDF per E-Mail zugestellt.",
+    "inputs": [
+      "Beobachtungsliste mit Unternehmen und Technologiethemen, die Sie uns per E-Mail oder Telefon nennen",
+      "Öffentlich zugängliche Patentdaten europäischer, amerikanischer, japanischer, chinesischer und internationaler Ämter",
+      "Öffentlich verfügbare Informationen zu Konzernstrukturen und Tochtergesellschaften",
+      "Zitationsdaten zwischen Patentdokumenten"
+    ],
+    "process": [
+      "Abstimmung der Beobachtungsliste und der gewünschten Technologiefelder per E-Mail oder im Telefonat",
+      "Sammlung der Patentdaten und Zuordnung der Anmelder zu Unternehmen und Konzernstrukturen",
+      "KI-gestützte Gruppierung der Dokumente nach Technologiefeldern und Aufbau von Zitationsnetzwerken",
+      "Berechnung von Kennzahlen wie Patentdynamik, Familiengröße, Zitationsqualität und Themenbreite",
+      "Prüfung und Kommentierung der Ergebnisse durch einen Analysten",
+      "Versand des fertigen Berichts als PDF per E-Mail, auf Wunsch mit telefonischer Besprechung"
+    ],
+    "outputs": [
+      "PDF-Bericht mit Kennzahlen je Unternehmen und Technologiefeld",
+      "Vergleich zum Vorquartal und innerhalb einer Vergleichsgruppe",
+      "Kurzkommentar der Analysten mit Auffälligkeiten und offenen Fragen",
+      "Methodikseite mit Datenquellen und Definitionen der Kennzahlen"
+    ],
+    "limitations": [
+      "Patentanmeldungen werden in der Regel erst rund 18 Monate nach der Anmeldung veröffentlicht, daher bildet der Bericht keine tagesaktuelle Lage ab.",
+      "Der Bericht ist keine Anlageempfehlung und keine rechtliche Bewertung, insbesondere keine Freedom-to-Operate- oder Verletzungsprüfung.",
+      "Unternehmen, die ihr Wissen überwiegend als Geschäftsgeheimnis schützen oder kaum patentieren, etwa viele Softwareanbieter, lassen sich nur eingeschränkt beurteilen.",
+      "Eine hohe Patentzahl sagt nichts über den kommerziellen Erfolg aus; wir werten ausschließlich öffentlich verfügbare Patentdaten aus.",
+      "Interne Unternehmensdaten und nicht öffentliche Dokumente werden nicht berücksichtigt."
+    ],
+    "scenarios": [
+      {
+        "title": "Vorauswahl vor einer Wachstumsfinanzierung",
+        "situation": "Ein Fonds prüft acht Hardware-Start-ups für eine Finanzierungsrunde und will die Liste auf drei Kandidaten eingrenzen.",
+        "how_it_helps": "Zitara vergleicht die Patentpositionen der acht Unternehmen anhand von Familiengröße, Zitationsqualität und Themenbreite und weist auf Auffälligkeiten hin, etwa auf Anmeldungen, die nur in einem einzigen Land verfolgt werden.",
+        "result": "Das Investmentteam erhält einen Vergleichsbericht als PDF, der die technologische Position der Kandidaten als eine von mehreren Entscheidungsgrundlagen einordnet."
+      },
+      {
+        "title": "Quartalsbeobachtung des eigenen Portfolios",
+        "situation": "Ein Family Office hält Beteiligungen an mehreren Unternehmen aus der Batterie- und Sensortechnik und möchte Veränderungen früh erkennen.",
+        "how_it_helps": "Der Patentradar erscheint jedes Quartal für die vereinbarte Beobachtungsliste und zeigt, in welchen Themenfeldern die Unternehmen ihre Aktivität ausbauen oder zurückfahren.",
+        "result": "Das Family Office erkennt Verschiebungen in der Patentstrategie seiner Beteiligungen und kann diese in Gesprächen mit den Geschäftsführungen gezielt ansprechen."
+      },
+      {
+        "title": "Technologiescouting für eine Corporate-Venture-Einheit",
+        "situation": "Die Venture-Einheit eines Industriekonzerns sucht junge Unternehmen in der Industrieautomatisierung, die zu ihrer Strategie passen.",
+        "how_it_helps": "Zitara gruppiert Patentdokumente nach Technologiefeldern und zeigt, welche Anmelder in einem Feld besonders häufig zitiert werden und welche Konzerne dort bereits stark vertreten sind.",
+        "result": "Das Team erhält eine kommentierte Übersicht möglicher Zielunternehmen und Wettbewerber, die als Ausgangspunkt für die weitere Prüfung dient."
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": "Wie erhalten wir die Berichte?",
+      "answer": "Der Patentradar wird als PDF per E-Mail an die von Ihnen genannten Ansprechpartner verschickt. Auf Wunsch besprechen wir die Ergebnisse zusätzlich in einem Telefonat."
+    },
+    {
+      "question": "Wie legen wir fest, welche Unternehmen und Themen untersucht werden?",
+      "answer": "Sie nennen uns Ihre Beobachtungsliste per E-Mail oder Telefon, und wir stimmen gemeinsam Unternehmen, Technologiefelder und Vergleichsgruppen ab. Änderungen an der Liste sind jeweils zum nächsten Quartalsbericht möglich."
+    },
+    {
+      "question": "Ist der Bericht eine Anlageempfehlung?",
+      "answer": "Nein. Der Bericht ordnet öffentlich verfügbare Patentdaten ein und liefert eine Grundlage für Ihre eigene Analyse. Er enthält weder eine Anlageempfehlung noch eine rechtliche Bewertung wie eine Freedom-to-Operate- oder Verletzungsprüfung."
+    },
+    {
+      "question": "Wie aktuell sind die Daten?",
+      "answer": "Patentanmeldungen werden in der Regel erst rund 18 Monate nach der Anmeldung veröffentlicht. Der Bericht zeigt daher die öffentlich sichtbare Entwicklung und keine tagesaktuelle Lage."
+    },
+    {
+      "question": "Für welche Unternehmen eignet sich die Analyse weniger?",
+      "answer": "Für Unternehmen, die kaum patentieren oder ihr Wissen überwiegend als Geschäftsgeheimnis schützen, etwa viele Softwareanbieter, ist die Aussagekraft begrenzt. Das sagen wir im Bericht und in der Abstimmung offen."
+    }
+  ],
+  "people": [
+    {
+      "name": "Konrad Wiesner",
+      "role": "Gründer und Geschäftsführer",
+      "level": "ceo",
+      "bio": "Konrad Wiesner studierte Wirtschaftsingenieurwesen und arbeitete zunächst in einer Unternehmensberatung, bevor er in die Fondsbranche wechselte. Dort verantwortete er mehrere Jahre einen Technologiefonds und gründete 2021 Zitara, um Patentdaten für Investmententscheidungen verlässlicher nutzbar zu machen."
+    },
+    {
+      "name": "Merle Hartmann",
+      "role": "Leiterin Datenwissenschaft",
+      "level": "head",
+      "bio": "Merle Hartmann promovierte in Informatik mit Schwerpunkt Textanalyse und arbeitete danach in der Forschungsabteilung eines Industrieunternehmens. Bei Zitara verantwortet sie die KI-Modelle zur Themenzuordnung und zum Aufbau der Zitationsnetzwerke."
+    },
+    {
+      "name": "Jens Overbeck",
+      "role": "Leiter Patentanalyse",
+      "level": "head",
+      "bio": "Jens Overbeck begann als Patentrechercheur in einer Kanzlei für gewerblichen Rechtsschutz und leitete später die Recherche in einer Konzernpatentabteilung. Bei Zitara führt er das Analystenteam und verantwortet die fachliche Prüfung jedes Berichts."
+    },
+    {
+      "name": "Annika Brandt",
+      "role": "Senior-Analystin Halbleiter und Elektronik",
+      "level": "staff",
+      "bio": "Annika Brandt kommt aus der Elektrotechnik und arbeitete mehrere Jahre in der Entwicklung eines Zulieferers, bevor sie in die Patentanalyse wechselte. Sie kommentiert die Berichte zu Halbleitern und Sensorik."
+    },
+    {
+      "name": "Tobias Kellermann",
+      "role": "Data Engineer",
+      "level": "staff",
+      "bio": "Tobias Kellermann begann als Softwareentwickler in einem Handelsunternehmen und spezialisierte sich dann auf Datenpipelines. Bei Zitara baut er die Verfahren, mit denen Patentdaten aus verschiedenen Ämtern bereinigt und Anmeldern zugeordnet werden."
+    },
+    {
+      "name": "Lena Voigtländer",
+      "role": "Analystin Medizintechnik",
+      "level": "staff",
+      "bio": "Lena Voigtländer studierte Biomedizinische Technik und war zuvor in der Marktforschung für Medizinprodukte tätig. Sie wertet Patentportfolios von Medizintechnik-Unternehmen aus und schreibt die zugehörigen Kommentare."
+    }
+  ],
+  "country": "DE",
+  "direction": "investment_research",
+  "service_type": "reports",
+  "scale": "small",
+  "language": "de",
+  "contacts": {
+    "city": "Köln",
+    "postal_code": "51749",
+    "street": "Marktplatz 38",
+    "phone": "+49 221 329 3483",
+    "email": "info@zitara.de"
+  },
+  "sections": {
+    "legal": {
+      "imprint": {
+        "represented_by": "Konrad Wiesner",
+        "content_responsible": "Merle Hartmann",
+        "liability_note": "Wir erstellen die Inhalte dieser Website mit Sorgfalt, übernehmen aber keine Gewähr für Vollständigkeit, Richtigkeit und Aktualität. Die Inhalte dienen der allgemeinen Information über unsere Leistungen und stellen keine Anlageempfehlung und keine Rechtsberatung dar. Soweit auf Angebote Dritter verwiesen wird, sind für deren Inhalte ausschließlich die jeweiligen Betreiber verantwortlich.",
+        "dispute_note": "Unsere Leistungen richten sich ausschließlich an Unternehmer, etwa Fonds, Family Offices, Corporate-Venture-Einheiten und Beteiligungsgesellschaften, und nicht an Verbraucher. Die Zitara UG (haftungsbeschränkt) ist daher weder verpflichtet noch bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Bei Meinungsverschiedenheiten bitten wir Sie, sich zunächst schriftlich oder telefonisch an uns zu wenden, damit wir eine einvernehmliche Lösung finden können."
+      },
+      "terms_intro": "Diese Bedingungen gelten für die Nutzung des Zitara Patentradar durch Unternehmenskunden der Zitara UG (haftungsbeschränkt), Marktplatz 38, 51749 Köln. Sie ergänzen den jeweils individuell geschlossenen Vertrag und gelten, soweit dort nichts Abweichendes vereinbart ist. Es handelt sich um ein allgemeines Muster und nicht um eine Rechtsberatung.",
+      "terms": [
+        {
+          "title": "Gegenstand der Leistungen",
+          "text": "Die Zitara UG (haftungsbeschränkt) erstellt für den Kunden den Zitara Patentradar, einen vierteljährlich erscheinenden, KI-gestützten Analysebericht. Er stellt für eine vereinbarte Beobachtungsliste von Unternehmen und Technologiethemen die Patentaktivität, Qualitätsindikatoren und Veränderungen gegenüber dem Vorquartal dar. Grundlage sind ausschließlich öffentlich zugängliche Patentdaten sowie öffentlich verfügbare Informationen zu Konzernstrukturen. Der Bericht enthält Kennzahlen, Zitationsanalysen und Kurzkommentare von Analysten."
+        },
+        {
+          "title": "Ablauf der Leistungserbringung",
+          "text": "Der Kunde nennt seine Beobachtungsliste per E-Mail oder Telefon, und die Parteien stimmen Unternehmen, Technologiefelder und Vergleichsgruppen gemeinsam ab. Zitara wertet die Daten aus, berechnet die Kennzahlen, und ein Analyst prüft und kommentiert die Ergebnisse. Der fertige Bericht wird als PDF per E-Mail an die vom Kunden genannten Ansprechpartner versandt. Auf Wunsch werden die Ergebnisse zusätzlich in einem Telefonat besprochen. Änderungen der Beobachtungsliste sind jeweils zum nächsten Quartalsbericht möglich."
+        },
+        {
+          "title": "Pflichten der Parteien",
+          "text": "Der Kunde stellt Zitara die für die Abstimmung der Beobachtungsliste erforderlichen Angaben rechtzeitig und zutreffend zur Verfügung und benennt Ansprechpartner für den Versand. Er nutzt die Berichte für eigene Zwecke und gibt sie nicht ohne Zustimmung von Zitara an Dritte außerhalb seines Unternehmens weiter. Zitara erbringt die Leistungen mit der gebotenen Sorgfalt und legt Datenquellen und Kennzahlendefinitionen auf einer Methodikseite im Bericht offen. Zitara weist im Bericht und in der Abstimmung darauf hin, wo Patentdaten nur begrenzt aussagekräftig sind."
+        },
+        {
+          "title": "Grenzen der Aussagekraft",
+          "text": "Patentanmeldungen werden in der Regel erst rund 18 Monate nach der Anmeldung veröffentlicht, daher bildet der Bericht keine tagesaktuelle Lage ab. Der Bericht ist keine Anlageempfehlung und keine rechtliche Bewertung, insbesondere keine Freedom-to-Operate- oder Verletzungsprüfung. Eine hohe Patentzahl sagt nichts über den kommerziellen Erfolg eines Unternehmens aus, und Unternehmen, die kaum patentieren oder ihr Wissen überwiegend als Geschäftsgeheimnis schützen, lassen sich nur eingeschränkt beurteilen. Interne Unternehmensdaten und nicht öffentliche Dokumente werden nicht berücksichtigt; Anlageentscheidungen trifft der Kunde in eigener Verantwortung."
+        },
+        {
+          "title": "Haftung",
+          "text": "Zitara haftet unbeschränkt bei Vorsatz und grober Fahrlässigkeit, bei der Verletzung von Leben, Körper oder Gesundheit sowie nach dem Produkthaftungsgesetz. Bei leicht fahrlässiger Verletzung wesentlicher Vertragspflichten ist die Haftung auf den vorhersehbaren, vertragstypischen Schaden begrenzt. Im Übrigen ist die Haftung bei leichter Fahrlässigkeit ausgeschlossen. Für Entscheidungen, die der Kunde auf Grundlage der Berichte trifft, sowie für das Ergebnis von Investitionen übernimmt Zitara keine Haftung und keine Gewähr."
+        },
+        {
+          "title": "Laufzeit und Kündigung",
+          "text": "Laufzeit, Berichtsrhythmus und Kündigungsfristen ergeben sich aus dem zwischen Kunde und Zitara geschlossenen Einzelvertrag. Das Recht beider Parteien zur außerordentlichen Kündigung aus wichtigem Grund bleibt unberührt. Bereits erstellte und versandte Berichte bleiben auch nach Vertragsende beim Kunden und dürfen im Rahmen dieser Bedingungen weiter intern genutzt werden. Kündigungen bedürfen mindestens der Textform, etwa per E-Mail."
+        },
+        {
+          "title": "Anwendbares Recht",
+          "text": "Für diese Bedingungen und die gesamte Geschäftsbeziehung zwischen dem Kunden und der Zitara UG (haftungsbeschränkt) gilt das Recht der Bundesrepublik Deutschland. Das UN-Kaufrecht findet keine Anwendung. Soweit gesetzlich zulässig, ist Gerichtsstand der Sitz von Zitara in Köln."
+        },
+        {
+          "title": "Schlussbestimmungen",
+          "text": "Änderungen und Ergänzungen dieser Bedingungen bedürfen der Textform. Sollten einzelne Bestimmungen ganz oder teilweise unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. An die Stelle der unwirksamen Regelung tritt die gesetzlich zulässige Regelung, die dem wirtschaftlichen Zweck am nächsten kommt. Individuelle Vereinbarungen mit dem Kunden gehen diesen Bedingungen vor."
+        }
+      ],
+      "effective_year": 2026
+    },
+    "requisites": {
+      "entries": [
+        {
+          "key": "court",
+          "value": "Amtsgericht Köln"
+        },
+        {
+          "key": "register",
+          "value": "HRB 901352"
+        },
+        {
+          "key": "vat_id",
+          "value": "DE606360411"
+        },
+        {
+          "key": "capital",
+          "value": "5.000 EUR"
+        },
+        {
+          "key": "director",
+          "value": "Konrad Wiesner"
+        }
+      ]
+    },
+    "privacy": {
+      "intro": "Diese Datenschutzerklärung informiert Besucherinnen und Besucher unserer Website sowie Personen, die mit uns Kontakt aufnehmen, über die Verarbeitung ihrer personenbezogenen Daten. Sie beruht auf der Datenschutz-Grundverordnung (DSGVO) und dem Bundesdatenschutzgesetz. Es handelt sich um ein allgemeines Muster und nicht um eine Rechtsberatung.",
+      "controller_note": "Verantwortlich für die Datenverarbeitung im Sinne der DSGVO ist die Zitara UG (haftungsbeschränkt), Marktplatz 38, 51749 Köln. Die Geschäftsführung liegt bei Konrad Wiesner.",
+      "data_processed": [
+        {
+          "category": "Server-Logdaten: IP-Adresse, Zeitpunkt, aufgerufene Seite, Datenmenge, Statuscode, Browser und Betriebssystem",
+          "purpose": "Auslieferung der Website, Gewährleistung von Stabilität und Sicherheit sowie Abwehr und Aufklärung von Missbrauch und Angriffen",
+          "legal_basis": "Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren und fehlerfreien Betrieb der Website)",
+          "actions": "Erhebung beim Seitenaufruf, Speicherung in Protokolldateien, bei Bedarf Auswertung zur Fehlersuche oder Aufklärung von Sicherheitsvorfällen, Löschung",
+          "retention": "Automatische Löschung nach wenigen Tagen; bei einem konkreten Sicherheitsvorfall bis zu dessen Abschluss."
+        },
+        {
+          "category": "E-Mail-Korrespondenz: Name, E-Mail-Adresse, Unternehmen, Funktion, Nachrichteninhalt, Zeitpunkt",
+          "purpose": "Bearbeitung und Beantwortung von Anfragen, Abstimmung zum Zitara Patentradar sowie Vorbereitung und Durchführung von Vertragsverhältnissen",
+          "legal_basis": "Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen, Vertrag); Art. 6 Abs. 1 lit. f DSGVO (Geschäftsanfragen); lit. c bei Aufbewahrungspflichten",
+          "actions": "Empfang, Lesen, Speicherung im Postfach, Beantwortung, interne Weitergabe an zuständige Mitarbeitende, Archivierung, Löschung",
+          "retention": "Ohne Vertragsschluss in der Regel Löschung nach spätestens sechs Monaten; sonst nach gesetzlichen Fristen von sechs bzw. zehn Jahren."
+        },
+        {
+          "category": "Telefonische Kontakte: Name, Rufnummer, Unternehmen, Funktion, Zeitpunkt, Gesprächsnotizen",
+          "purpose": "Beantwortung telefonischer Anfragen, Abstimmung von Beobachtungslisten und Technologiefeldern sowie Besprechung von Ergebnissen auf Wunsch",
+          "legal_basis": "Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen, Vertrag); Art. 6 Abs. 1 lit. f DSGVO (effiziente Geschäftskommunikation)",
+          "actions": "Entgegennahme des Anrufs, Erfassung der Rufnummer, Anfertigung und Speicherung von Gesprächsnotizen, interne Weitergabe, Löschung",
+          "retention": "Löschung nach Zweckwegfall, in der Regel spätestens nach sechs Monaten; bei Vertragsbezug gelten gesetzliche Aufbewahrungsfristen."
+        }
+      ],
+      "recipients": [
+        "Interne Mitarbeitende der Zitara UG (haftungsbeschränkt), soweit sie die Daten zur Erfüllung ihrer Aufgaben benötigen",
+        "Dienstleister für Hosting, E-Mail-Betrieb und IT-Betreuung, die als Auftragsverarbeiter nach Art. 28 DSGVO an unsere Weisungen gebunden sind",
+        "Steuerberater, Wirtschaftsprüfer und Rechtsberater, soweit dies für Buchhaltung, Prüfung oder die Durchsetzung und Abwehr von Ansprüchen erforderlich ist",
+        "Behörden und Gerichte, soweit wir gesetzlich zur Auskunft oder Herausgabe verpflichtet sind"
+      ],
+      "rights": [
+        "Recht auf Auskunft über die zu Ihrer Person gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO)",
+        "Recht auf Berichtigung unrichtiger oder unvollständiger Daten (Art. 16 DSGVO)",
+        "Recht auf Löschung Ihrer Daten, soweit keine gesetzlichen Aufbewahrungspflichten oder anderen Gründe entgegenstehen (Art. 17 DSGVO)",
+        "Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+        "Recht auf Datenübertragbarkeit, soweit die Verarbeitung auf einem Vertrag beruht und automatisiert erfolgt (Art. 20 DSGVO)",
+        "Recht auf Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen aus Gründen, die sich aus Ihrer besonderen Situation ergeben (Art. 21 DSGVO)",
+        "Recht auf Beschwerde bei einer Datenschutzaufsichtsbehörde, insbesondere an Ihrem Wohnort, Arbeitsplatz oder am Ort des mutmaßlichen Verstoßes (Art. 77 DSGVO)"
+      ],
+      "cookies_statement": "Unsere Website verwendet keine Cookies und keine Analyse- oder Trackingwerkzeuge. Es werden keine Inhalte nachgeladen, die Ihr Nutzungsverhalten auswerten. Eine Einwilligungsabfrage ist daher nicht erforderlich.",
+      "contact_for_requests": "Anfragen zum Datenschutz und zur Ausübung Ihrer Rechte richten Sie bitte schriftlich oder telefonisch an die Zitara UG (haftungsbeschränkt) unter den auf dieser Seite genannten Kontaktdaten. Wir beantworten Ihre Anfrage in der Regel innerhalb eines Monats. Zur Vermeidung von Missbrauch können wir einen Nachweis Ihrer Identität verlangen.",
+      "sections": [
+        {
+          "title": "Keine automatisierte Entscheidungsfindung",
+          "text": "Eine automatisierte Entscheidungsfindung einschließlich Profiling im Sinne des Art. 22 DSGVO findet im Zusammenhang mit dieser Website und der Kommunikation mit uns nicht statt. Wir übermitteln personenbezogene Daten nicht in Drittländer, soweit dies nicht im Einzelfall zur Erfüllung eines Vertrags erforderlich und nach der DSGVO zulässig ist."
+        }
+      ],
+      "effective_year": 2026
+    },
+    "security": {
+      "summary": "Zitara setzt als Team mit 29 Mitarbeitenden auf Sicherheitsmaßnahmen, die zu unserer Größe passen und im Alltag gelebt werden. Für den Zitara Patentradar verarbeiten wir vor allem öffentliche Patentdaten; von Kunden erhalten wir meist nur Beobachtungsliste und Kontaktdaten. Diese schützen wir durch Zugriffsregeln, verschlüsselte Übertragung und nachvollziehbare Abläufe, wissen aber: Absolute Sicherheit kann niemand garantieren.",
+      "measures": [
+        {
+          "area": "Zugriffskontrolle",
+          "description": "Auf Kundenangaben wie Beobachtungslisten und Korrespondenz haben nur die Mitarbeitenden Zugriff, die an dem jeweiligen Bericht arbeiten. Zugänge werden nach dem Prinzip der minimalen Rechte vergeben und beim Ausscheiden oder Rollenwechsel zeitnah angepasst. Wo es möglich ist, wird eine Zwei-Faktor-Anmeldung genutzt."
+        },
+        {
+          "area": "Verschlüsselung bei der Übertragung",
+          "description": "Die Übertragung von Daten zwischen unseren Systemen sowie beim Abruf von Diensten erfolgt verschlüsselt. Berichte werden als PDF per E-Mail zugestellt. Wir nutzen dafür die Transportverschlüsselung, die der Mail-Server des Empfängers unterstützt. Wenn Sie besondere Anforderungen an den Versand haben, stimmen wir uns vorab mit Ihnen ab."
+        },
+        {
+          "area": "Trennung der Kundendaten",
+          "description": "Beobachtungslisten und Berichte werden je Kunde getrennt abgelegt. Der Zugriff ist auf das jeweilige Projektteam beschränkt. Dadurch ist nachvollziehbar, wer Zugang zu den Angaben eines Kunden hat, und die Angaben verschiedener Kunden werden nicht vermischt."
+        },
+        {
+          "area": "Protokollierung",
+          "description": "Zugriffe auf interne Systeme, in denen Kundenangaben und Berichte liegen, sowie wesentliche administrative Änderungen werden protokolliert. Die Protokolle helfen, Auffälligkeiten zu erkennen und im Ereignisfall zu klären, was passiert ist. Der Zugriff auf die Protokolle ist auf wenige Personen beschränkt."
+        },
+        {
+          "area": "Schulung und Sensibilisierung",
+          "description": "Neue Mitarbeitende werden beim Einstieg zu Datenschutz und Informationssicherheit eingewiesen. Alle Teammitglieder werden regelmäßig an sicheren Umgang mit Passwörtern, Phishing-Erkennung und vertraulicher Kommunikation erinnert. Alle sind zur Vertraulichkeit verpflichtet."
+        },
+        {
+          "area": "Prüfung von Dienstleistern",
+          "description": "Bevor wir externe Dienstleister einsetzen, etwa für E-Mail, Hosting oder Datenspeicherung, prüfen wir deren Sicherheits- und Datenschutzniveau. Wo personenbezogene Daten verarbeitet werden, schließen wir die erforderlichen Vereinbarungen zur Auftragsverarbeitung. Die eingesetzten Dienstleister überprüfen wir in angemessenen Abständen."
+        },
+        {
+          "area": "Geräte und Systeme",
+          "description": "Arbeitsgeräte werden mit aktuellen Sicherheitsupdates betrieben und sind durch Passwort bzw. Geräteverschlüsselung geschützt. Datensicherungen werden so angelegt, dass Berichte und Projektunterlagen nach einem Ausfall wiederhergestellt werden können."
+        }
+      ],
+      "data_handling": "Für den Zitara Patentradar erhalten wir Ihre Beobachtungsliste mit Unternehmen und Technologiethemen per E-Mail oder Telefon; weitere Kundendaten benötigen wir nicht. Wir werten öffentlich zugängliche Patent-, Konzern- und Zitationsdaten aus; interne oder nicht öffentliche Unterlagen berücksichtigen wir nicht, bitte senden Sie uns diese nicht. Berichte gehen als PDF per E-Mail an Ihre Ansprechpartner. Listen, Berichte und Korrespondenz speichern wir getrennt je Kunde, solange der Vertrag oder gesetzliche Aufbewahrungspflichten es erfordern, und löschen sie danach. Auf Wunsch löschen wir früher, soweit keine gesetzlichen Pflichten entgegenstehen.",
+      "incident_response": "Bei einem Sicherheitsvorfall ziehen wir die Verantwortlichen hinzu, begrenzen den Vorfall und sichern relevante Protokolle. Wir klären Ursache und Umfang und beheben die Ursache. Betroffene Kunden informieren wir zeitnah über Kenntnisstand und eingeleitete Schritte. Soweit vorgeschrieben, melden wir Vorfälle mit personenbezogenen Daten der Aufsichtsbehörde. Danach werten wir den Vorfall aus und verbessern unsere Maßnahmen. Mögliche Sicherheitsprobleme können Sie uns jederzeit direkt melden."
+    },
+    "references": {
+      "clients": [
+        {
+          "name": "Rheinkapital Technologiepartner GmbH",
+          "segment": "Venture-Capital-Fonds mit Fokus auf Hardware und Industrietechnologie",
+          "since_year": 2022,
+          "description": "Der Fonds gehört zu den ersten Kunden von Zitara und nutzt den Zitara Patentradar zur Vorauswahl und Beobachtung von Kandidaten aus den Bereichen Industrieautomatisierung und Batterietechnik. Die Berichte kommen als PDF per E-Mail und dienen dem Investmentteam als eine von mehreren Entscheidungsgrundlagen."
+        },
+        {
+          "name": "Familienstiftung Lindenhof Beteiligungen",
+          "segment": "Family Office",
+          "since_year": 2023,
+          "description": "Das Family Office beobachtet mit dem Patentradar vierteljährlich die Patentaktivität seiner Beteiligungen in der Medizintechnik. Veränderungen gegenüber dem Vorquartal dienen als Anlass für gezielte Gespräche mit den Geschäftsführungen."
+        },
+        {
+          "name": "Nordwerk Ventures",
+          "segment": "Corporate-Venture-Einheit eines Industriekonzerns",
+          "since_year": 2024,
+          "description": "Die Einheit nutzt kommentierte Übersichten zu möglichen Zielunternehmen und Wettbewerbern im Halbleiterumfeld. Die Berichte sind für das Team ein Ausgangspunkt für die weitere Prüfung."
+        },
+        {
+          "name": "Altmark Growth Partners",
+          "segment": "Growth-Fonds mit Technologiefokus",
+          "since_year": 2023,
+          "description": "Der Fonds vergleicht Kandidaten vor Wachstumsfinanzierungen innerhalb einer abgestimmten Vergleichsgruppe. Dafür nutzt er die Kennzahlen und Zitationsanalysen des Patentradars neben eigener Prüfung."
+        },
+        {
+          "name": "Brenner & Sohn Industriebeteiligungen",
+          "segment": "Beteiligungsgesellschaft für patentintensive Industrie",
+          "since_year": 2025,
+          "description": "Die Beteiligungsgesellschaft lässt Portfoliounternehmen und Wettbewerber aus dem Maschinen- und Anlagenbau beobachten. Die Methodikseite des Berichts nutzt das Team, um Kennzahlen intern nachvollziehbar zu erläutern."
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "Der Patentradar hat uns geholfen, Anmeldezahlen besser einzuordnen. Besonders hilfreich ist, dass Konzerntöchter und Patentfamilien berücksichtigt werden und die Kommentare offen benennen, wo die Aussagekraft begrenzt ist.",
+          "author_name": "Sabine Kornfeld",
+          "author_role": "Investment Director",
+          "client": "Rheinkapital Technologiepartner GmbH"
+        },
+        {
+          "quote": "Der Vergleich zum Vorquartal gibt uns einen klaren Anlass für Gespräche mit unseren Beteiligungen. Die Berichte sind sachlich und ersetzen nicht unsere eigene Bewertung, sondern ergänzen sie.",
+          "author_name": "Matthias Ehrlinger",
+          "author_role": "Leiter Beteiligungsmanagement",
+          "client": "Familienstiftung Lindenhof Beteiligungen"
+        },
+        {
+          "quote": "Die kommentierte Übersicht war für uns ein guter Einstieg in ein neues Technologiefeld. Die Analysten benennen auch offene Fragen, was die weitere Prüfung deutlich zielgerichteter macht.",
+          "author_name": "Christina Reuter",
+          "author_role": "Principal Technologiescouting",
+          "client": "Nordwerk Ventures"
+        }
+      ],
+      "cases": [
+        {
+          "title": "Vergleichsbericht vor einer Wachstumsfinanzierung",
+          "client": "Altmark Growth Partners",
+          "challenge": "Das Investmentteam wollte mehrere Kandidaten aus dem Batteriebereich vor einer Finanzierungsrunde vergleichen. Reine Anmeldezahlen waren wegen Tochtergesellschaften und unterschiedlicher Patentqualität kaum vergleichbar.",
+          "approach": "Gemeinsam wurden Kandidaten, Technologiefelder und eine Vergleichsgruppe abgestimmt. Zitara ordnete Anmelder den Konzernstrukturen zu, bildete Zitationsnetzwerke und berechnete Kennzahlen wie Patentdynamik, Familiengröße und Zitationsqualität. Ein Analyst kommentierte die Ergebnisse.",
+          "result": "Das Team erhielt einen PDF-Bericht, der die technologische Position der Kandidaten innerhalb der Vergleichsgruppe einordnete. Er diente als eine von mehreren Entscheidungsgrundlagen, ersetzte aber weder die eigene Prüfung noch eine Anlageentscheidung. Der Bericht wies zudem darauf hin, dass wegen der Veröffentlichungsfrist von rund 18 Monaten die jüngste Entwicklung nicht sichtbar ist."
+        },
+        {
+          "title": "Quartalsbeobachtung eines Medizintechnik-Portfolios",
+          "client": "Familienstiftung Lindenhof Beteiligungen",
+          "challenge": "Das Family Office wollte regelmäßig nachvollziehen, ob sich die Patentstrategie seiner Beteiligungen verändert, ohne dafür eigene Patentexperten aufzubauen.",
+          "approach": "Für eine vereinbarte Beobachtungsliste lieferte Zitara den Patentradar vierteljährlich als PDF per E-Mail. Auf Wunsch wurden die Ergebnisse in einem Telefonat besprochen, Änderungen der Liste flossen jeweils zum nächsten Quartalsbericht ein.",
+          "result": "Das Family Office erkennt Verschiebungen in Themenbreite und Patentaktivität im Quartalsvergleich und kann diese gezielt in Gesprächen mit den Geschäftsführungen ansprechen. Aussagen zum wirtschaftlichen Erfolg der Beteiligungen leitet es daraus nicht ab."
+        },
+        {
+          "title": "Technologiescouting im Halbleiterumfeld",
+          "client": "Nordwerk Ventures",
+          "challenge": "Die Corporate-Venture-Einheit wollte sich einen Überblick über mögliche Zielunternehmen und Wettbewerber in einem für sie neuen Halbleiter-Teilfeld verschaffen.",
+          "approach": "Nach Abstimmung der Technologiethemen gruppierte Zitara öffentlich verfügbare Patentdokumente KI-gestützt nach Feldern und wertete Zitationsbeziehungen aus. Die Halbleiter-Analystin ergänzte kurze Kommentare zu Auffälligkeiten und offenen Fragen.",
+          "result": "Das Team erhielt eine kommentierte Übersicht als Ausgangspunkt für die weitere Prüfung. Unternehmen, die kaum patentieren, wurden im Bericht als nur eingeschränkt beurteilbar gekennzeichnet."
+        }
+      ],
+      "publications": [
+        {
+          "title": "Warum Anmeldezahlen allein in die Irre führen",
+          "kind": "article",
+          "year": 2023,
+          "author": "Jens Overbeck",
+          "summary": "Der Beitrag zeigt, weshalb die reine Zahl der Patentanmeldungen wenig über die technologische Position eines Unternehmens aussagt. Er erläutert die Rolle von Konzerntöchtern und Patentfamilien.",
+          "body": [
+            "Anmeldezahlen werden in Investitionsunterlagen gern zitiert, weil sie leicht zu ermitteln sind. Als Vergleichsmaßstab taugen sie aber nur begrenzt. Ein Unternehmen kann viele Anmeldungen haben und trotzdem wenig technologische Substanz aufbauen.",
+            "Ein erster Grund liegt in den Konzernstrukturen. Patente werden häufig über Tochtergesellschaften angemeldet, die unter eigenem Namen auftreten. Wer sie nicht dem richtigen Unternehmen zuordnet, unterschätzt manche Anbieter und überschätzt andere.",
+            "Ein zweiter Grund ist die Patentfamilie. Dieselbe Erfindung wird oft in mehreren Ländern angemeldet. Die Größe einer Familie sagt etwas über den Schutzumfang aus, die bloße Zahl der Dokumente dagegen verzerrt das Bild.",
+            "Deshalb betrachten wir Kennzahlen im Zusammenhang mit Zitationen und Vergleichsgruppen. Auch dann bleibt eine Patentanalyse eine Grundlage für eigene Überlegungen und keine Anlageempfehlung."
+          ]
+        },
+        {
+          "title": "Zitationsnetzwerke lesen: Was Verweise zwischen Patenten verraten",
+          "kind": "whitepaper",
+          "year": 2024,
+          "author": "Merle Hartmann",
+          "summary": "Das Whitepaper erklärt, wie aus Zitationen zwischen Patentdokumenten Hinweise auf die Qualität und Einbettung einer Technologie entstehen. Es benennt auch die Grenzen dieser Methode.",
+          "body": [
+            "Patente verweisen auf frühere Dokumente, und diese Verweise lassen sich als Netzwerk auswerten. Ein Patent, das von vielen späteren Anmeldungen zitiert wird, gilt häufig als Baustein für nachfolgende Entwicklungen. Diese Annahme ist ein Indiz, kein Beweis.",
+            "Wir nutzen KI-gestützte Verfahren, um Dokumente nach Technologiefeldern zu gruppieren und Zitationsbeziehungen innerhalb und zwischen diesen Feldern sichtbar zu machen. So lässt sich einschätzen, ob ein Unternehmen eher in einem Nischenbereich verankert ist oder mehrere Themen bearbeitet. Ein Analyst prüft die Ergebnisse, bevor sie in einen Bericht einfließen.",
+            "Die Methode hat Grenzen. Zitationen entstehen erst mit zeitlicher Verzögerung, und junge Patente haben naturgemäß wenige. Zudem unterscheiden sich die Zitiergewohnheiten zwischen Technologiefeldern.",
+            "Aus diesem Grund vergleichen wir Unternehmen stets innerhalb einer abgestimmten Vergleichsgruppe. Die Definitionen der Kennzahlen legen wir auf einer eigenen Methodikseite offen."
+          ]
+        },
+        {
+          "title": "Was Patentdaten über Batterie- und Halbleiterunternehmen sagen und was nicht",
+          "kind": "talk",
+          "year": 2025,
+          "author": "Annika Brandt",
+          "summary": "Der Vortrag ordnet ein, welche Aussagen Patentdaten in hardwarenahen Branchen tragen. Er beleuchtet typische Fehlinterpretationen und die Bedeutung der Veröffentlichungsfrist.",
+          "body": [
+            "In hardwarenahen Branchen wie Batterien und Halbleitern ist Patentschutz ein zentrales Mittel, um Entwicklungsarbeit abzusichern. Deshalb eignen sich Patentdaten hier besonders gut als Indikator für technologische Aktivität. Sie erzählen aber nie die ganze Geschichte.",
+            "Eine hohe Patentzahl sagt nichts darüber, ob ein Produkt am Markt erfolgreich ist. Ebenso wenig zeigen Patentdaten interne Entwicklungen, die nicht veröffentlicht werden. Wir arbeiten ausschließlich mit öffentlich verfügbaren Daten und weisen darauf im Bericht deutlich hin.",
+            "Hinzu kommt der Zeitversatz: Anmeldungen werden in der Regel erst rund 18 Monate nach dem Anmeldetag veröffentlicht. Der Bericht bildet daher die öffentlich sichtbare Entwicklung ab und keine tagesaktuelle Lage.",
+            "Der Vortrag empfiehlt, Patentkennzahlen als eine Perspektive neben Gesprächen, Marktanalysen und technischer Prüfung zu nutzen. So lassen sich Kandidaten mit weniger Bauchgefühl vergleichen, ohne die Aussagekraft der Daten zu überschätzen."
+          ]
+        }
+      ]
+    }
+  }
+}

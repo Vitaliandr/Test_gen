@@ -1,0 +1,50 @@
+[project]
+name = "sitegen"
+version = "0.1.0"
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-exclude = [".venv"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP"]
+ignore = ["E262", "E265", "E266"]
+
+[tool.ruff.lint.per-file-ignores]
+#в conftest приложение импортируется после настройки окружения
+"tests/conftest.py" = ["E402"]
+"migrations/versions/*.py" = ["E501"]
+#в промптах длинные строки, переносы только портят текст
+"sitegen/aspects/*.py" = ["E501"]
+"sitegen/core/generator.py" = ["E501"]
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["fastapi.Depends", "fastapi.Query", "fastapi.Body"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["sitegen", "tests", "scripts"]
+
+[tool.mypy]
+python_version = "3.12"
+plugins = ["pydantic.mypy"]
+packages = ["sitegen", "tests", "scripts"]
+disallow_untyped_defs = true
+check_untyped_defs = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+no_implicit_optional = true
+
+[[tool.mypy.overrides]]
+#в тестах аннотации не требуем
+module = "tests.*"
+disallow_untyped_defs = false
+
+[tool.coverage.run]
+source = ["sitegen"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true

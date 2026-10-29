@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero small">
+  <div class="wrap">
+    <h1>{{ ptitle }}</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>{{ ta.clients }}</h2>
+    <ul class="clients">
+      {% for cl in section.clients %}
+      {% set words = cl.name.replace(',', ' ').split() %}
+      <li class="client">
+        <div class="client-head">
+          {# логотипов нет, ставим инициалы #}
+          <span class="mono" aria-hidden="true">{{ (words[0][0] ~ (words[1][0] if words | length > 1 else '')) | upper }}</span>
+          <div>
+            <h3>{{ cl.name }}</h3>
+            <p class="client-meta"><span>{{ cl.segment }}</span><span class="since">{{ ta.since }} {{ cl.since_year }}</span></p>
+          </div>
+        </div>
+        <p>{{ cl.description }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <h2>{{ ta.testimonials }}</h2>
+    {% for q in section.testimonials %}
+    <blockquote class="quote">
+      <p>{{ q.quote }}</p>
+      <footer>{{ q.author_name }}, {{ q.author_role }}, {{ q.client }}</footer>
+    </blockquote>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>{{ ta.cases }}</h2>
+    <ol class="scenarios">
+      {% for cs in section.cases %}
+      <li class="scenario">
+        <h3>{{ cs.title }}</h3>
+        <p class="muted case-client">{{ cs.client }}</p>
+        <dl class="flow">
+          <div><dt>{{ ta.challenge }}</dt><dd>{{ cs.challenge }}</dd></div>
+          <div><dt>{{ ta.approach }}</dt><dd>{{ cs.approach }}</dd></div>
+          <div><dt>{{ ta.result }}</dt><dd>{{ cs.result }}</dd></div>
+        </dl>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <h2>{{ ta.publications }}</h2>
+    <ul class="pubs">
+      {% for p in section.publications %}
+      <li>
+        {% if p.body %}
+        <details class="pub">
+          <summary>
+            <span class="tag">{{ ta['kind_' ~ p.kind] }}</span><strong>{{ p.title }}</strong>
+            <span class="muted">{{ p.year }}, {{ ta.by }}: {{ p.author }}</span>
+            <p>{{ p.summary }}</p>
+            <span class="pub-open">{{ ta.read }}</span>
+          </summary>
+          <div class="pub-body">{% for para in p.body %}<p>{{ para }}</p>{% endfor %}</div>
+        </details>
+        {% else %}
+        <span class="tag">{{ ta['kind_' ~ p.kind] }}</span><strong>{{ p.title }}</strong>
+        <span class="muted">{{ p.year }}, {{ ta.by }}: {{ p.author }}</span>
+        <p>{{ p.summary }}</p>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock %}
